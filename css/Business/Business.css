@@ -1,0 +1,814 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../font/Linaround-Regular.otf);
+}
+
+@font-face {
+    font-family: myScoundFont;
+    src: url(../../font/Linaround-Bold.otf);
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: myThirdFont;
+    src: url(../../font/Linaround-Light.otf);
+}
+
+@font-face {
+    font-family: myforthFont;
+    src: url(../../font/Linaround-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: myfifthFont;
+    src: url(../../font/Linaround-SemiBold.otf);
+}
+
+@font-face {
+    font-family: mysixthFont;
+    src: url(../../font/Linaround-Thin.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F7;
+}
+
+.sign {
+    background-color: #F2F2F7;
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.section-one {
+    background-color: #FFFFFF;
+    background-image: url('../../images/Business/Path\ 9836.png');
+    background-size: contain;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.section-one .section-one-image {
+    display: flex;
+    flex-direction: column;
+    width: 1556px;
+    height: 682px;
+    border-radius: 54px;
+    position: absolute;
+    /* right: 0%; */
+    top: 190px;
+}
+
+.section-one-image img {
+    object-fit: contain;
+}
+
+.section-one-description {
+    position: absolute;
+    width: 603px;
+    height: 308px;
+    top: 25%;
+    left: 90px;
+    direction: rtl;
+}
+
+.section-one-description h1 {
+    color: white;
+    font-size: 80px;
+    text-align: right;
+    font-family: myScoundFont;
+    font-weight: normal;
+}
+
+.section-one-description p {
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    font-weight: normal;
+    font-family: myThirdFont;
+}
+
+.section-two {
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px 0px 0px 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two-description {
+    width: 645px;
+    height: 557.41px;
+    direction: rtl;
+}
+
+.section-two h1 {
+    color: #E4122C;
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+}
+
+.section-two p {
+    color: black;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-top: 36.5px;
+    text-align: justify;
+    font-family: myFirstFont;
+    font-weight: normal;
+}
+
+.section-two button {
+    width: 173.32px;
+    height: 59.91px;
+    background-color: transparent;
+    color: black;
+    font-size: 27px;
+    border-radius: 50px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #191919;
+    font-family: myfifthFont;
+    font-weight: normal;
+}
+
+.section-two button:hover {
+    background-color: black;
+    color: white;
+    font-family: myfifthFont;
+    font-weight: normal;
+}
+
+.section-two img {
+    width: 517px;
+    height: 607px;
+    margin-left: 126px;
+}
+
+.section-three {
+    background-color: #F2F2F7;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../images/Business/Mask\ Group\ 45.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-description {
+    width: 645px;
+    height: 557.41px;
+    direction: rtl;
+}
+
+.section-three h1 {
+    color: #E4122C;
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+}
+
+.section-three p {
+    color: black;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-top: 36.5px;
+    text-align: justify;
+    font-family: myFirstFont;
+    font-weight: normal;
+}
+
+.section-three button {
+    width: 173.32px;
+    height: 59.91px;
+    background-color: transparent;
+    color: black;
+    font-size: 27px;
+    border-radius: 50px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #191919;
+    font-family: myfifthFont;
+    font-weight: normal;
+}
+
+.section-three button:hover {
+    background-color: black;
+    color: white;
+    font-family: myfifthFont;
+    font-weight: normal;
+}
+
+.section-three img {
+    width: 517px;
+    height: 607px;
+    margin-right: 164.7px;
+}
+
+@media screen and (max-width: 600px) {
+    .sign {
+        background-color: #F2F2F7;
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .section-one {
+        background-color: #FFFFFF;
+        background-image: url('../../images/Business/Path\ 9836.png');
+        background-size: contain;
+        display: flex;
+        height: 746px;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .section-one .section-one-image {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 606px;
+        border-radius: 30px;
+        position: absolute;
+        top: 38px;
+    }
+    .section-one-image img {
+        object-fit: cover;
+        width: 320px;
+        height: 606px;
+        border-radius: 30px;
+    }
+    .section-one-description {
+        position: absolute;
+        width: 223px;
+        height: 155px;
+        top: 385px;
+        bottom: 29px;
+        left: 47px;
+        right: 59;
+        direction: rtl;
+    }
+    .section-one-description h1 {
+        color: white;
+        font-size: 30px;
+        text-align: right;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-one-description p {
+        color: white;
+        font-size: 20px;
+        text-align: right;
+        font-weight: normal;
+        font-family: myThirdFont;
+    }
+    .section-two {
+        background-color: #FFFFFF;
+        width: 100vw;
+        height: 731px;
+        border-radius: 0px 0px 0px 236px;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .section-two-description {
+        width: 254px;
+        height: 188.96px;
+        direction: rtl;
+        margin-top: 34.6px;
+    }
+    .section-two h1 {
+        color: #E4122C;
+        font-size: 20px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-two p {
+        color: black;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-two button {
+        width: 81.89px;
+        height: 28.31px;
+        background-color: transparent;
+        color: black;
+        font-size: 12px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two img {
+        width: 210px;
+        height: 262px;
+        margin-left: 0px;
+    }
+    .section-three {
+        background-color: #F2F2F7;
+        width: 100vw;
+        height: 730px;
+        background-image: url('../../images/Business/Mask\ Group\ 45.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-three-description {
+        width: 254px;
+        height: 188.96px;
+        direction: rtl;
+        margin-top: 34.6px;
+    }
+    .section-three h1 {
+        color: #E4122C;
+        font-size: 20px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-three p {
+        color: black;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-three button {
+        width: 81.89px;
+        height: 28.31px;
+        background-color: transparent;
+        color: black;
+        font-size: 12px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three img {
+        width: 210px;
+        height: 262px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .sign {
+        background-color: #F2F2F7;
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .section-one {
+        background-color: #FFFFFF;
+        background-image: url('../../images/Business/Path\ 9836.png');
+        background-size: contain;
+        display: flex;
+        height: 597px;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .section-one .section-one-image {
+        display: flex;
+        flex-direction: column;
+        width: 665px;
+        height: 496px;
+        border-radius: 54px;
+        position: absolute;
+        /* right: 0%; */
+        top: 62px;
+    }
+    .section-one-image img {
+        object-fit: cover;
+        width: 665px;
+        height: 496px;
+        border-radius: 54px;
+    }
+    .section-one-description {
+        position: absolute;
+        width: 380px;
+        height: 188px;
+        left: 41px;
+        direction: rtl;
+        top: 153px;
+        bottom: 153px;
+    }
+    .section-one-description h1 {
+        color: white;
+        font-size: 40px;
+        text-align: right;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-one-description p {
+        color: white;
+        font-size: 25px;
+        text-align: right;
+        font-weight: normal;
+        font-family: myThirdFont;
+    }
+    .section-two {
+        background-color: #FFFFFF;
+        width: 100vw;
+        height: 358px;
+        border-radius: 0px 0px 0px 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two-description {
+        width: 340px;
+        height: 261.93px;
+        direction: rtl;
+    }
+    .section-two h1 {
+        color: #E4122C;
+        font-size: 24px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-two p {
+        color: black;
+        font-size: 18px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-two button {
+        width: 93.78px;
+        height: 32.42px;
+        background-color: transparent;
+        color: black;
+        font-size: 13px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two img {
+        width: 210px;
+        height: 262px;
+        margin-left: 41px;
+    }
+    .section-three {
+        background-color: #F2F2F7;
+        width: 100vw;
+        height: 408px;
+        background-image: url('../../images/Business/Mask\ Group\ 45.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-three-description {
+        width: 340px;
+        height: 269.01px;
+        direction: rtl;
+    }
+    .section-three h1 {
+        color: #E4122C;
+        font-size: 24px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-three p {
+        color: black;
+        font-size: 18px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-three button {
+        width: 93.78px;
+        height: 32.42px;
+        background-color: transparent;
+        color: black;
+        font-size: 13px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three img {
+        width: 210px;
+        height: 262px;
+        margin-right: 41px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .sign {
+        background-color: #F2F2F7;
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .section-one {
+        background-color: #FFFFFF;
+        background-image: url('../../images/Business/Path\ 9836.png');
+        background-size: contain;
+        display: flex;
+        height: 730px;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .section-one .section-one-image {
+        display: flex;
+        flex-direction: column;
+        width: 1064px;
+        height: 466px;
+        border-radius: 54px;
+        position: absolute;
+        /* right: 0%; */
+        top: 62px;
+    }
+    .section-one-image img {
+        object-fit: cover;
+        width: 1064px;
+        height: 466px;
+        border-radius: 54px;
+    }
+    .section-one-description {
+        position: absolute;
+        width: 390px;
+        height: 188px;
+        left: 41px;
+        direction: rtl;
+        top: 153px;
+        bottom: 153px;
+    }
+    .section-one-description h1 {
+        color: white;
+        font-size: 50px;
+        text-align: right;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-one-description p {
+        color: white;
+        font-size: 24px;
+        text-align: right;
+        font-weight: normal;
+        text-align: justify;
+        font-family: myThirdFont;
+    }
+    .section-two {
+        background-color: #FFFFFF;
+        width: 100vw;
+        height: 730px;
+        border-radius: 0px 0px 0px 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two-description {
+        width: 496px;
+        height: 261.93px;
+        direction: rtl;
+    }
+    .section-two h1 {
+        color: #E4122C;
+        font-size: 35px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-two p {
+        color: black;
+        font-size: 24px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-two button {
+        width: 124.63px;
+        height: 43.08px;
+        background-color: transparent;
+        color: black;
+        font-size: 24px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-two img {
+        width: 400px;
+        height: 500px;
+        margin-left: 41px;
+    }
+    .section-three {
+        background-color: #F2F2F7;
+        width: 100vw;
+        height: 730px;
+        background-image: url('../../images/Business/Mask\ Group\ 45.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-three-description {
+        width: 496px;
+        height: 261.93px;
+        direction: rtl;
+    }
+    .section-three h1 {
+        color: #E4122C;
+        font-size: 35px;
+        font-family: myScoundFont;
+        font-weight: normal;
+    }
+    .section-three p {
+        color: black;
+        font-size: 24px;
+        line-height: 1.4;
+        margin-top: 8px;
+        text-align: justify;
+        font-family: myFirstFont;
+        font-weight: normal;
+    }
+    .section-three button {
+        width: 124.63px;
+        height: 43.08px;
+        background-color: transparent;
+        color: black;
+        font-size: 24px;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #191919;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three button:hover {
+        background-color: black;
+        color: white;
+        font-family: myfifthFont;
+        font-weight: normal;
+    }
+    .section-three img {
+        width: 400px;
+        height: 500px;
+        margin-right: 41px;
+    }
+}

@@ -1,0 +1,309 @@
+/* .section-two-description {
+    height: 300px !important;
+} */
+
+
+/* .section-two-description p {
+    /* font-size: 0.8em; */
+
+
+/* margin-bottom: 1rem;
+
+} */
+
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.section-four h1 {
+    position: relative;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .read{
+        overflow-y: auto hidden;
+        /* height: fit-content; */
+        /* max-height: 200px; */
+        height: auto;
+        cursor: pointer;
+        /* scroll-behavior: auto; */
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+    /* .section-four-patern {
+        min-height: 640px;
+    }
+    .section-four {
+        min-height: 640px;
+    } */
+    /* .section-four-image {
+        position: relative !important;
+    }
+    .section-four-description {
+        display: flexbox;
+        position: relative !important;
+    } */
+    /* .card__name>.card__read-more--open {
+        padding-top: 7rem !important;
+    } */
+    /* .section-four .card__read-more {
+        margin-top: 10rem !important;
+    } */
+    .card__read-more--open .read-more-btn {
+        top: 30px !important;
+    }
+    .section-four-image {
+        display: contents;
+    }
+    /* .section-four-description .card__read-more--open {
+        top: 0rem;
+    } */
+    /* .card__read-more--open>.read-more-btn {
+        top: 6rem !important;
+    } */
+}
+.section-two     .card__read-more--open {
+    /* display: block; */
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+  
+    /* transition: all 0.5s; */
+    /* margin-top: 2rem; */
+    padding-bottom: 20rem;   
+}
+.section-three .card__read-more--open {
+    /* display: block; */
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+  
+    /* transition: all 0.5s; */
+    /* margin-top: 2rem; */
+    padding-bottom: 14rem;   
+}
+.section-four .card__read-more--open {
+    /* display: block; */
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+  
+    /* transition: all 0.5s; */
+    /* margin-top: 2rem; */
+    padding-bottom: 9rem;   
+}
+.section-five .card__read-more--open {
+    /* display: block; */
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+  
+    /* transition: all 0.5s; */
+    /* margin-top: 2rem; */
+    padding-bottom: 9rem;   
+}
+.section-six .card__read-more--open {
+    /* display: block; */
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+  
+    /* transition: all 0.5s; */
+    /* margin-top: 2rem; */
+    padding-bottom: 6rem;   
+}
+.read-more-btn {
+    display: block !important;
+    display: contents;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+@media (min-width: 1201px) and (max-width: 1440px){
+    .section-two     .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 16rem;   
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 12rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6rem;   
+    }
+    .read{
+        overflow-y: auto hidden;
+        /* height: fit-content; */
+        /* max-height: 200px; */
+        height: auto;
+        cursor: pointer;
+        /* scroll-behavior: auto; */
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+}
+@media (min-width: 601px) and (max-width: 1200px){
+    /* .card__read-more > .section-two p {
+        text-overflow: ellipsis;
+overflow-y: hidden;
+min-height: 40px;
+max-height: 200px;
+height: auto;
+cursor: pointer;
+scroll-behavior: auto;
+    } */
+    .read{
+        overflow-y: auto hidden;
+        /* height: fit-content; */
+        /* max-height: 200px; */
+        height: auto;
+        cursor: pointer;
+        /* scroll-behavior: auto; */
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }    
+    .section-two p:has(.card__read-more--open){
+        text-overflow: ellipsis;
+        overflow-y: auto;
+        min-height: 40px;
+        max-height: 200px;
+        height: auto;
+        cursor: pointer;
+        scroll-behavior: auto;
+    }
+    p:has(~.card__read-more.card__read-more--open) {
+        text-overflow: ellipsis;
+        overflow-y: auto;
+        min-height: 40px;
+        max-height: 200px;
+        height: auto;
+        cursor: pointer;
+        scroll-behavior: auto;
+    }
+      .card__read-more--open > .section-two p {
+        text-overflow: ellipsis;
+
+    }
+    .section-two .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 10rem;   
+        
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.7rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5.5rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5.5rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 4rem;   
+    }
+}
+@media screen and (max-width: 600px){
+    .read{
+        overflow-y: auto hidden;
+        /* height: fit-content; */
+        /* max-height: 200px; */
+        height: auto;
+        cursor: pointer;
+        /* scroll-behavior: auto; */
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+    .section-two     .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 9rem;   
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 7.5rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 4rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 4rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 4rem;   
+    }
+}
