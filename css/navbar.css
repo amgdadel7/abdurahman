@@ -1,0 +1,1341 @@
+                                                        @font-face {
+                                                            font-family: myFirstFont;
+                                                            src: url(../font/Linaround-Regular.otf);
+                                                        }
+                                                        
+                                                        @font-face {
+                                                            font-family: myScoundFont;
+                                                            src: url(../font/Linaround-Bold.otf);
+                                                        }
+                                                        
+                                                        @font-face {
+                                                            font-family: ExtraLight;
+                                                            src: url(../font/Linaround-ExtraLight.otf);
+                                                        }
+                                                        
+                                                        @font-face {
+                                                            font-family: Light1;
+                                                            src: url(../font/Linaround-Light.otf);
+                                                        }
+                                                        
+                                                        @font-face {
+                                                            font-family: Semi-Bold;
+                                                            src: url(../font/Linaround-SemiBold.otf);
+                                                        }
+                                                        
+                                                        @font-face {
+                                                            font-family: Thin1;
+                                                            src: url(../font/Linaround-Thin.otf);
+                                                        }
+                                                        
+                                                        * {
+                                                            margin: 0;
+                                                            padding: 0;
+                                                            box-sizing: border-box;
+                                                        }
+                                                        
+                                                        body {
+                                                            background: #f2f2f2;
+                                                            top: 70px;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        nav {
+                                                            background: white;
+                                                            display: flex;
+                                                            position: fixed;
+                                                            top: 0;
+                                                            right: 0;
+                                                            left: 0;
+                                                            height: 70px;
+                                                            z-index: 50;
+                                                            transition: all 80ms ease-out;
+                                                        }
+                                                        
+                                                        nav.scrolled {
+                                                            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.11);
+                                                            background: #FBFBFB;
+                                                        }
+                                                        
+                                                        nav::after {
+                                                            content: '';
+                                                            clear: both;
+                                                            display: table;
+                                                        }
+                                                        
+                                                        nav .logo {
+                                                            float: left;
+                                                            color: black;
+                                                            font-size: 24px;
+                                                            font-weight: 600;
+                                                            line-height: 70px;
+                                                            padding-left: 280px;
+                                                            top: 5px;
+                                                        }
+                                                        
+                                                        .logo a img {
+                                                            height: 29.86px;
+                                                            width: auto;
+                                                            border-radius: 0px;
+                                                            box-shadow: 0px 0px 0px transparent;
+                                                        }
+                                                        
+                                                        nav ul {
+                                                            float: left;
+                                                            list-style: none;
+                                                            margin-left: 0;
+                                                            position: relative;
+                                                            left: 3%;
+                                                            z-index: 2;
+                                                        }
+                                                        
+                                                        nav ul li {
+                                                            float: right;
+                                                            display: inline-block;
+                                                            background: transparent;
+                                                            margin: 0 15px;
+                                                        }
+                                                        
+                                                        nav ul ul li:hover {
+                                                            background: red;
+                                                        }
+                                                        
+                                                        nav ul li a {
+                                                            color: white;
+                                                            text-decoration: none;
+                                                            line-height: 70px;
+                                                            font-size: 20px;
+                                                            padding: 8px 15px;
+                                                            font-family: myFirstFont;
+                                                            font-weight: normal;
+                                                        }
+                                                        
+                                                        nav ul li a:hover {
+                                                            color: #e4122c;
+                                                        }
+                                                        
+                                                        nav ul ul {
+                                                            /* display: block; */
+                                                            position: absolute;
+                                                            /* margin-left: -70px; */
+                                                            top: 70px;
+                                                            width: max-content;
+                                                            opacity: 0;
+                                                            left: auto;
+                                                            right: auto;
+                                                            visibility: hidden;
+                                                            transition: all 0.3s ease 0s;
+                                                            background: rgb(142, 142, 147);
+                                                            border-radius: 0px 0px 15px 15px;
+                                                        }
+                                                        
+                                                        nav ul .drop-one {
+                                                            margin-left: -70px;
+                                                        }
+                                                        
+                                                        nav ul .drop-tow {
+                                                            margin-left: -110px;
+                                                        }
+                                                        
+                                                        nav ul .drop-three {
+                                                            margin-left: -90px;
+                                                        }
+                                                        
+                                                        nav ul .drop-fore {
+                                                            margin-left: -77px;
+                                                        }
+                                                        
+                                                        nav ul li:hover>ul {
+                                                            opacity: 1;
+                                                            visibility: visible;
+                                                        }
+                                                        
+                                                        nav ul ul li {
+                                                            display: flex;
+                                                            position: relative;
+                                                            margin: 0px;
+                                                            width: 100%;
+                                                            float: none;
+                                                            flex-direction: column;
+                                                            flex-wrap: nowrap;
+                                                            align-content: center;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            right: 0px;
+                                                        }
+                                                        
+                                                        nav ul ul .service {
+                                                            color: white;
+                                                            font-size: 19px;
+                                                            font-family: Semi-Bold;
+                                                            font-weight: normal;
+                                                            background: #AEAEB2;
+                                                        }
+                                                        
+                                                        nav ul ul .service span {
+                                                            margin-left: 8px;
+                                                            color: white;
+                                                            font-size: 26px;
+                                                        }
+                                                        
+                                                        nav ul ul li a {
+                                                            line-height: 40px;
+                                                            width: 100%;
+                                                            text-align: center;
+                                                            font-size: 17px;
+                                                            width: 100%;
+                                                            color: white;
+                                                            font-family: myFirstFont;
+                                                            font-weight: normal;
+                                                        }
+                                                        
+                                                        nav ul ul li a:hover {
+                                                            color: white;
+                                                            background: #e4122c;
+                                                        }
+                                                        
+                                                        .show,
+                                                        .icon,
+                                                        input {
+                                                            display: none;
+                                                        }
+                                                        
+                                                        .llla {
+                                                            display: flex;
+                                                            padding-top: 0px;
+                                                            position: absolute;
+                                                            right: 15%;
+                                                            top: 12px;
+                                                            width: 166px;
+                                                            height: 35px;
+                                                            background: transparent;
+                                                            flex-direction: row;
+                                                            flex-wrap: nowrap;
+                                                            align-content: flex-end;
+                                                            justify-content: flex-end;
+                                                        }
+                                                        
+                                                        .download-btn {
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                            padding: 10px 20px;
+                                                            background-color: transparent;
+                                                            color: #1c1c1e;
+                                                            border: 1px solid #1c1c1e;
+                                                            border-radius: 20px;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            transition: background-color 0.3s, color 0.3s;
+                                                        }
+                                                        
+                                                        .download-btn span {
+                                                            font-size: 18px;
+                                                            font-family: myFirstFont;
+                                                        }
+                                                        
+                                                        .download-btn:hover {
+                                                            background-color: #1c1c1e;
+                                                            color: #fff;
+                                                        }
+                                                        
+                                                        .download-btn:hover i,
+                                                        .download-btn:hover span {
+                                                            color: #fff;
+                                                        }
+                                                        
+                                                        .download-btn i {
+                                                            font-size: 20px;
+                                                            color: #1c1c1e;
+                                                            padding-left: 20px;
+                                                            transition: color 0.3s;
+                                                        }
+                                                        /* Small devices (landscape phones, 576px and up) */
+                                                        
+                                                        @media all and (max-width: 575.98px) {
+                                                            .llla {
+                                                                position: absolute;
+                                                                float: left;
+                                                            }
+                                                            nav ul {
+                                                                position: absolute;
+                                                                top: 70px;
+                                                                margin-right: 0px;
+                                                                width: 100%;
+                                                            }
+                                                            nav .logo {
+                                                                padding-left: 28px;
+                                                                width: 100%;
+                                                                padding-top: 4px;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0px;
+                                                                position: absolute;
+                                                                right: 64px;
+                                                                top: 19px;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            nav ul .drop-one {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul li,
+                                                            nav ul ul li {
+                                                                display: block;
+                                                                width: 100%;
+                                                                height: fit-content;
+                                                                left: 7px;
+                                                                float: right;
+                                                                text-align: center;
+                                                                background: #8E8E93;
+                                                            }
+                                                            nav ul ul li {
+                                                                padding-top: 2px;
+                                                                padding-bottom: 2px;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #8e8e93;
+                                                            }
+                                                            nav ul ul {
+                                                                top: 70px;
+                                                                position: static;
+                                                                border-top: none;
+                                                                float: none;
+                                                                display: none;
+                                                                width: 100%;
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul ul a {
+                                                                padding-left: 60px;
+                                                            }
+                                                            nav ul ul li a {
+                                                                line-height: 40px;
+                                                                text-align: center;
+                                                                font-size: 20px;
+                                                                padding-left: 10px;
+                                                                height: auto;
+                                                                width: 100%;
+                                                                color: white;
+                                                                font-family: Light1;
+                                                                background: #8e8e93 !important;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                background: #8e8e93;
+                                                            }
+                                                            .show {
+                                                                display: block;
+                                                                color: white;
+                                                                background: #e4122c;
+                                                                font-size: 18px;
+                                                                padding: 0 20px;
+                                                                line-height: 50px;
+                                                                cursor: pointer;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            .btn-1:checked+.drop-one {
+                                                                display: block;
+                                                            }
+                                                            .btn-1 .drop-one {
+                                                                display: none;
+                                                            }
+                                                            input[type="checkbox"]:checked+ul {
+                                                                display: block;
+                                                            }
+                                                            .icon {
+                                                                display: block;
+                                                                color: #1c1c1e;
+                                                                position: absolute;
+                                                                right: 44px;
+                                                                top: 23px;
+                                                                height: 10px;
+                                                                width: 8px;
+                                                                line-height: 50px;
+                                                                font-size: 20px;
+                                                                cursor: pointer;
+                                                                animation-name: identifierback;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            label div {
+                                                                width: 8px;
+                                                                height: 4px;
+                                                                background-color: #333945;
+                                                                margin-bottom: 4px;
+                                                                margin-left: 0;
+                                                                border-radius: 6px;
+                                                                transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+                                                            }
+                                                            label div:first-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            label div:nth-child(2) {
+                                                                width: 15px;
+                                                                margin-left: 4.5px;
+                                                                background-color: #e4122c;
+                                                                transition: all .7s;
+                                                            }
+                                                            @keyframes identifier {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                            }
+                                                            @keyframes identifierback {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                            }
+                                                            label div:last-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            #btn:checked+label {
+                                                                transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                top: 17px;
+                                                                animation-name: identifier;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            #btn:checked+label div {
+                                                                width: 6px;
+                                                                margin-left: 12px;
+                                                                margin-bottom: 3px;
+                                                                display: block;
+                                                            }
+                                                            #btn:checked+label div:first-child {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            #btn:checked+label div:nth-child(2) {
+                                                                background-color: #e4122c;
+                                                            }
+                                                            #btn:checked+label div:nth-child(3) {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            nav ul a:hover {
+                                                                box-shadow: none;
+                                                            }
+                                                            .show+a,
+                                                            ul {
+                                                                display: none;
+                                                            }
+                                                            [id^='btn']:checked~ul {
+                                                                display: block;
+                                                            }
+                                                            .fa-chevron-down {
+                                                                font-size: 10px;
+                                                                float: left;
+                                                                padding-top: 19px;
+                                                                margin-right: -8px;
+                                                                transform: translateX(107px);
+                                                            }
+                                                            @keyframes arrowdown {
+                                                                0% {
+                                                                    transform: rotateX(150deg)
+                                                                }
+                                                                100% {
+                                                                    transform: rotateX(150deg)
+                                                                }
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: #1c1c1e;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                height: 28px;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn span {
+                                                                display: none;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                /* margin-right: 12px; */
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                            /* .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                              
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/download.png) no-repeat;
+                                                            } */
+                                                        }
+                                                        
+                                                        @media (min-width:576px) and (max-width:960px) {
+                                                            .llla {
+                                                                position: absolute;
+                                                                float: left;
+                                                            }
+                                                            nav ul {
+                                                                float: right;
+                                                                list-style: none;
+                                                                margin-left: 0;
+                                                                position: absolute;
+                                                                top: 70px;
+                                                                left: 0%;
+                                                                z-index: 2;
+                                                            }
+                                                            nav ul li {
+                                                                float: right;
+                                                                display: inline-block;
+                                                                margin: 0px 0px;
+                                                            }
+                                                            nav ul li a {
+                                                                color: white;
+                                                                text-decoration: none;
+                                                                line-height: 50px;
+                                                                font-size: 20px;
+                                                                padding: 0px 15px;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            nav ul ul {
+                                                                position: absolute;
+                                                                top: 70px;
+                                                                width: auto;
+                                                                opacity: 0;
+                                                                left: auto;
+                                                                right: auto;
+                                                                visibility: hidden;
+                                                                transition: all 0.3s ease 0s;
+                                                                background: rgb(142, 142, 147);
+                                                                border-radius: 0px 0px 15px 15px;
+                                                            }
+                                                            nav .logo {
+                                                                padding-left: 51px;
+                                                                width: 100%;
+                                                                padding-top: 2px;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 20px;
+                                                                position: absolute;
+                                                                right: 89px;
+                                                                top: -5px;
+                                                                width: fit-content;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: #1c1c1e;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                height: 28px;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn span {
+                                                                display: none;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                            /* .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/download.png) no-repeat;
+                                                            } */
+                                                            nav ul .drop-one {
+                                                                margin-left: -40px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -72px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -55px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -39px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: 12px;
+                                                            }
+                                                            nav ul ul li {
+                                                                padding: 0;
+                                                                margin: 0;
+                                                            }
+                                                            nav ul ul {
+                                                                top: 50px;
+                                                                position: absolute;
+                                                                border-top: none;
+                                                                float: none;
+                                                                display: none;
+                                                                width: max-content;
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul ul a {
+                                                                padding-left: 60px;
+                                                            }
+                                                            .show {
+                                                                display: flex;
+                                                                /* color: #1c1c1e; */
+                                                                background: #e4122c;
+                                                                color: white;
+                                                                font-size: 19px;
+                                                                padding: 0 37px;
+                                                                left: -10px;
+                                                                line-height: 50px;
+                                                                cursor: pointer;
+                                                                font-family: myFirstFont;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: center;
+                                                                align-items: center;
+                                                            }
+                                                            .icon {
+                                                                display: block;
+                                                                color: #1c1c1e;
+                                                                position: absolute;
+                                                                right: 47px;
+                                                                top: 18px;
+                                                                height: 10px;
+                                                                width: 8px;
+                                                                line-height: 50px;
+                                                                font-size: 20px;
+                                                                cursor: pointer;
+                                                                animation-name: identifierback;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            label div {
+                                                                width: 8px;
+                                                                height: 3px;
+                                                                background-color: #333945;
+                                                                margin-bottom: 6px;
+                                                                margin-left: 0;
+                                                                border-radius: 6px;
+                                                                transition: 0.5s ease width, 0.5s ease margin-left, 0.5s ease margin-bottom, 0.5s ease background-color;
+                                                            }
+                                                            label div:first-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            label div:nth-child(2) {
+                                                                width: 15px;
+                                                                margin-left: 4.5px;
+                                                                background-color: #e4122c;
+                                                                transition: all .7s;
+                                                            }
+                                                            @keyframes identifier {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                            }
+                                                            @keyframes identifierback {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                            }
+                                                            label div:last-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            #btn:checked+label {
+                                                                transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                top: 15px;
+                                                                animation-name: identifier;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            #btn:checked+label div {
+                                                                width: 7px;
+                                                                margin-left: 12px;
+                                                                margin-bottom: 3px;
+                                                                display: block;
+                                                            }
+                                                            #btn:checked+label div:first-child {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            #btn:checked+label div:nth-child(2) {
+                                                                background-color: #e4122c;
+                                                            }
+                                                            #btn:checked+label div:nth-child(3) {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            nav ul a:hover {
+                                                                box-shadow: none;
+                                                            }
+                                                            .show+a,
+                                                            ul {
+                                                                display: none;
+                                                            }
+                                                            [id^=btn]:checked~ul {
+                                                                display: inline-block;
+                                                            }
+                                                            .fa-chevron-down {
+                                                                font-size: 10px;
+                                                                padding-top: 2px;
+                                                                margin-right: 6px;
+                                                                transform: translateX(-16px);
+                                                            }
+                                                        }
+                                                        
+                                                        @media (min-width:961px) and (max-width: 1024px) {
+                                                            nav::after {
+                                                                content: '';
+                                                                clear: both;
+                                                                display: table;
+                                                            }
+                                                            nav .logo {
+                                                                float: right;
+                                                                color: black;
+                                                                font-size: 24px;
+                                                                font-weight: 600;
+                                                                line-height: 70px;
+                                                                padding-left: 90px;
+                                                            }
+                                                            nav ul {
+                                                                float: left;
+                                                                list-style: none;
+                                                                margin-left: 0;
+                                                                position: relative;
+                                                                left: 3%;
+                                                                border-radius: 0px 0px 15px 15px;
+                                                            }
+                                                            nav ul li {
+                                                                float: right;
+                                                                display: inline-block;
+                                                                background: transparent;
+                                                                margin: 0 15px;
+                                                            }
+                                                            nav ul li a {
+                                                                color: #1c1c1e;
+                                                                text-decoration: none;
+                                                                line-height: 70px;
+                                                                font-size: 18px;
+                                                                padding: 8px 15px;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            nav ul li a:hover {
+                                                                color: #e4122c;
+                                                            }
+                                                            nav ul .drop-one {
+                                                                margin-left: -120px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -125px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -120px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -130px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul ul {
+                                                                position: absolute;
+                                                                margin-left: -124px;
+                                                                top: 70px;
+                                                                opacity: 0;
+                                                                left: auto;
+                                                                visibility: hidden;
+                                                                transition: .3s;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul li:hover>ul {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            nav ul ul li {
+                                                                position: relative;
+                                                                margin: 0px;
+                                                                width: 180px;
+                                                                float: none;
+                                                                display: list-item;
+                                                            }
+                                                            nav ul ul li a {
+                                                                line-height: 40px;
+                                                                float: right;
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #e4122c !important;
+                                                                background-color: red;
+                                                            }
+                                                            nav ul ul:hover>li {
+                                                                background: #e4122c;
+                                                            }
+                                                            .show,
+                                                            .icon,
+                                                            input {
+                                                                display: none;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0px;
+                                                                position: absolute;
+                                                                right: 4%;
+                                                                top: 17px;
+                                                                width: auto;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: transparent;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn:hover {
+                                                                background-color: #1c1c1e;
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn span {
+                                                                padding-right: 10px;
+                                                            }
+                                                            /* .download-btn:hover i, */
+                                                            .download-btn:hover span {
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/download.png) no-repeat;
+                                                            }
+                                                            .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                                /* margin-right: 12px; */
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (min-width:1025px) and (max-width: 1440px) {
+                                                            nav::after {
+                                                                content: '';
+                                                                clear: both;
+                                                                display: table;
+                                                            }
+                                                            nav .logo {
+                                                                float: right;
+                                                                color: black;
+                                                                font-size: 24px;
+                                                                font-weight: 600;
+                                                                line-height: 70px;
+                                                                padding-left: 20%;
+                                                                padding-top: 6px;
+                                                            }
+                                                            nav ul {
+                                                                float: left;
+                                                                list-style: none;
+                                                                margin-left: 0;
+                                                                position: relative;
+                                                                left: 3%;
+                                                                border-radius: 0px 0px 15px 15px;
+                                                            }
+                                                            nav ul li {
+                                                                float: right;
+                                                                display: inline-block;
+                                                                background: transparent;
+                                                                margin: 0 15px;
+                                                            }
+                                                            nav ul li a {
+                                                                color: #1c1c1e;
+                                                                text-decoration: none;
+                                                                line-height: 70px;
+                                                                font-size: 18px;
+                                                                padding: 8px 15px;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            nav ul li a .fa-chevron-down {
+                                                                font-size: 13px;
+                                                                padding-right: 7.8px;
+                                                            }
+                                                            nav ul li a:hover {
+                                                                color: #e4122c;
+                                                            }
+                                                            nav ul ul {
+                                                                position: absolute;
+                                                                margin-left: -117px;
+                                                                top: 70px;
+                                                                opacity: 0;
+                                                                left: auto;
+                                                                visibility: hidden;
+                                                                transition: .3s;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul li:hover>ul {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            nav ul ul li {
+                                                                position: relative;
+                                                                margin: 0px;
+                                                                width: 180px;
+                                                                float: none;
+                                                                display: list-item;
+                                                            }
+                                                            nav ul ul li .service {
+                                                                background: #e5e5ea !important;
+                                                                font-family: Semi-Bold;
+                                                                font-weight: normal;
+                                                                font-size: 19px;
+                                                            }
+                                                            nav ul ul li .service:hover {
+                                                                background: #e4122c !important;
+                                                            }
+                                                            nav ul ul li a {
+                                                                font-size: 18px;
+                                                                line-height: 22px;
+                                                                float: right;
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #e4122c !important;
+                                                                background-color: red;
+                                                            }
+                                                            nav ul ul:hover>li {
+                                                                background: #e4122c;
+                                                            }
+                                                            nav ul .drop-one {
+                                                                margin-left: -49px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -57px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -115px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -124px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -58px;
+                                                            }
+                                                            .show,
+                                                            .icon,
+                                                            input {
+                                                                display: none;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0px;
+                                                                position: absolute;
+                                                                right: 16%;
+                                                                top: 17px;
+                                                                WIDTH: auto;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: transparent;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn:hover {
+                                                                background-color: #1c1c1e;
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn span {
+                                                                padding-right: 10px;
+                                                            }
+                                                            .download-btn:hover span {
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/download.png) no-repeat;
+                                                            }
+                                                            .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (min-width: 1441px) and (max-width: 1921px) {
+                                                            nav::after {
+                                                                content: '';
+                                                                clear: both;
+                                                                display: table;
+                                                            }
+                                                            nav .logo {
+                                                                float: right;
+                                                                color: black;
+                                                                font-size: 24px;
+                                                                font-weight: 600;
+                                                                line-height: 70px;
+                                                                padding-left: 317px;
+                                                                padding-top: 4px;
+                                                            }
+                                                            nav ul {
+                                                                float: left;
+                                                                list-style: none;
+                                                                margin-left: 0;
+                                                                position: relative;
+                                                                left: 129.7px;
+                                                                border-radius: 0px 0px 15px 15px;
+                                                            }
+                                                            nav ul li {
+                                                                float: right;
+                                                                display: inline-block;
+                                                                background: transparent;
+                                                                margin: 0 15px;
+                                                            }
+                                                            nav ul li a {
+                                                                color: #1c1c1e;
+                                                                text-decoration: none;
+                                                                line-height: 70px;
+                                                                font-size: 24px;
+                                                                padding: 8px 25px;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            nav ul li a .fa-chevron-down {
+                                                                font-size: 19px;
+                                                                padding-right: 7.8px;
+                                                            }
+                                                            nav ul li a:hover {
+                                                                color: #e4122c;
+                                                            }
+                                                            nav ul ul {
+                                                                position: absolute;
+                                                                margin-left: -116px;
+                                                                top: 70px;
+                                                                opacity: 0;
+                                                                left: auto;
+                                                                visibility: hidden;
+                                                                transition: .3s;
+                                                                background: #8E8E93;
+                                                            }
+                                                            nav ul li:hover>ul {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            nav ul ul li {
+                                                                position: relative;
+                                                                margin: 0px;
+                                                                width: 180px;
+                                                                float: none;
+                                                                display: list-item;
+                                                            }
+                                                            nav ul ul li a {
+                                                                line-height: 40px;
+                                                                float: right;
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #e4122c !important;
+                                                                background-color: red;
+                                                            }
+                                                            nav ul ul:hover>li {
+                                                                background: #e4122c;
+                                                            }
+                                                            .show,
+                                                            .icon,
+                                                            input {
+                                                                display: none;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0;
+                                                                position: absolute;
+                                                                right: 417.7px;
+                                                                top: 17px;
+                                                                width: auto;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: transparent;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn span {
+                                                                color: #1c1c1e;
+                                                                padding-right: 10px;
+                                                            }
+                                                            .download-btn:hover {
+                                                                background-color: #1c1c1e;
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn:hover span {
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/download.png) no-repeat;
+                                                            }
+                                                            .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                            nav ul .drop-one {
+                                                                margin-left: -20px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -37px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -115px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -124px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -58px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (min-width: 1920px) and (width: 2560px) {
+                                                            nav::after {
+                                                                content: '';
+                                                                clear: both;
+                                                                display: table;
+                                                            }
+                                                            nav .logo {
+                                                                float: right;
+                                                                color: black;
+                                                                font-size: 24px;
+                                                                font-weight: 600;
+                                                                line-height: 70px;
+                                                                padding-left: 35%;
+                                                            }
+                                                            nav ul {
+                                                                float: left;
+                                                                list-style: none;
+                                                                margin-left: 0;
+                                                                position: relative;
+                                                                left: 3%;
+                                                                border-radius: 0px 0px 15px 15px;
+                                                            }
+                                                            nav ul li {
+                                                                float: right;
+                                                                display: inline-block;
+                                                                background: transparent;
+                                                                margin: 0 15px;
+                                                            }
+                                                            nav ul li a {
+                                                                color: #1c1c1e;
+                                                                text-decoration: none;
+                                                                line-height: 70px;
+                                                                font-size: 18px;
+                                                                padding: 8px 15px;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            nav ul li a:hover {
+                                                                color: #e4122c;
+                                                            }
+                                                            nav ul ul {
+                                                                position: absolute;
+                                                                margin-left: -116px;
+                                                                top: 70px;
+                                                                opacity: 0;
+                                                                left: auto;
+                                                                visibility: hidden;
+                                                                transition: .3s;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul li:hover>ul {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            nav ul ul li {
+                                                                position: relative;
+                                                                margin: 0px;
+                                                                width: 180px;
+                                                                float: none;
+                                                                display: list-item;
+                                                            }
+                                                            nav ul ul li a {
+                                                                line-height: 40px;
+                                                                float: right;
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                color: white;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #e4122c !important;
+                                                                background-color: red;
+                                                            }
+                                                            nav ul ul:hover>li {
+                                                                background: #e4122c;
+                                                            }
+                                                            .show,
+                                                            .icon,
+                                                            input {
+                                                                display: none;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0;
+                                                                position: absolute;
+                                                                right: 30%;
+                                                                top: 17px;
+                                                                width: auto;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: transparent;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                            }
+                                                            .download-btn:hover {
+                                                                background-color: #1c1c1e;
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn span {
+                                                                padding-right: 10px;
+                                                            }
+                                                            .download-btn:hover span {
+                                                                color: #fff;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/download.png) no-repeat;
+                                                                transition: color 0.3s;
+                                                            }
+                                                            .download-btn:hover i {
+                                                                padding-left: 20px;
+                                                                width: 14px;
+                                                                height: 15px;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                            nav ul .drop-one {
+                                                                margin-left: -121px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -126px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -115px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -124px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -58px;
+                                                            }
+                                                        }
