@@ -1809,8 +1809,7 @@ p {
         font-weight: normal;
         /* width: 294px; */
         transform: translateX(220px) translateY(-50px);
-      }
-    
+    }
     .blog-slider__pagination {
         transform: translateX(-50%);
         left: 50% !important;
@@ -2977,7 +2976,10 @@ p {
 
 @media (min-width: 321px) and (max-width: 375px) {
     .slide-content {
-        margin: 0 55px
+        margin: 0 55px;
+        min-height: 500px !important;
+        max-height: 600px !important;
+        height: 600px;
     }
     .swiper-navBtn {
         display: block;
@@ -3066,12 +3068,13 @@ p {
     .swiper-pagination {
         position: relative;
         left: 47% !important;
-        bottom: 4%;
+        bottom: 33px !important;
         text-align: center;
         transition: .3s opacity;
         transform: translate3d(0, 0, 0);
         z-index: 10;
-        padding-top: 45px !important;
+        /* padding-top: 45px !important; */
+        position: relative !important;
     }
     .landing {
         min-height: 90vh !important;
@@ -3082,13 +3085,17 @@ p {
         height: 90vh !important;
     }
     .secoundslider {
-        height: 90vh !important;
+        /* height: 90vh !important; */
+        min-height: 90vh !important;
+        max-height: 109vh !important;
+        height: max-content !important;
     }
     .secound {
         position: relative;
         display: block;
         top: 4vh;
-        min-height: 86vh !important;
+        min-height: 85vh !important;
+        max-height: 100vh !important;
     }
     .offer {
         /* background-color: #8e8e93; */
@@ -7008,7 +7015,7 @@ p {
         display: none !important;
         width: 1200px;
         height: 600px;
-      }
+    }
     .adviccee {
         display: block !important;
         font-size: 18px;
@@ -7053,7 +7060,7 @@ p {
         display: none !important;
         width: 1200px;
         height: 600px;
-      }
+    }
     .adviccee {
         display: block !important;
         font-size: 25px;
@@ -7089,6 +7096,7 @@ iframe {
     height: 421px;
     top: 5vh;
 }
+
 .adviccee {
     display: none;
     font-size: 25px;
