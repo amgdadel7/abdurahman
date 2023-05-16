@@ -7911,3 +7911,4398 @@ iframe {
     top: 2vh;
     position: relative;
 }
+/* ///////////////////////////// */
+.services-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.service-continer {
+    position: relative;
+    width: 1168px;
+    height: 762px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 100px;
+}
+
+.sevice-continer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 356px;
+    height: 356px;
+}
+
+.sevice-continer-text-titel {
+    font-size: 89px;
+    color: #E4122C;
+    font-family: myScoundFont;
+}
+
+.sevice-continer-text-subtitel {
+    font-size: 33px;
+    width: 260px;
+    height: 135px;
+    direction: rtl;
+    text-align: justify;
+    font-family: myFirstFont;
+}
+
+.c {
+    position: relative;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    border-radius: 54px;
+    direction: rtl;
+}
+
+.sevice-continer-frist {
+    position: absolute;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    transition: 0s ease;
+    border-radius: 54px;
+    cursor: pointer;
+}
+
+.sevice-continer-frist-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 356px;
+    height: 356px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    transition: 0s ease;
+}
+
+.sevice-continer-frist-image-titel {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 41px;
+    font-family: myFirstFont;
+}
+
+.sevice-continer-frist .sevice-continer-frist-content {
+    opacity: 0;
+}
+
+.sevice-continer-frist-content .sevice-continer-frist-content-titel h1 {
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 33px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sevice-continer-frist-content-subtitel p {
+    font-size: 33px;
+    width: 704px;
+    height: 225px;
+    color: white;
+    font-family: myFirstFont;
+    font-weight: normal;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.c.active {
+    position: absolute;
+    width: 1391px;
+    height: 887px;
+    z-index: 9;
+    top: -80px;
+    right: -100px;
+    animation: identifier 1s;
+}
+
+.c.active .sevice-continer-frist {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    animation: identifierone 0.5s;
+    cursor: default;
+}
+
+.c.active .sevice-continer-frist-image-titel {
+    display: none;
+}
+
+.c.active .sevice-continer-frist-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    height: 321px;
+    top: 4.5%;
+    right: 34%;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.c.active .sevice-continer-frist-content-titel h1 {
+    font-size: 45px;
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.c.active .sevice-continer-frist-content-subtitel p {
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.c .fa-times {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.c.active .fa-times {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 41px;
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    visibility: visible;
+    display: block;
+}
+
+.c .another-sevice-continer-frist {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* opacity: 0; */
+    /* width: 0px; */
+    visibility: hidden;
+}
+
+.c.active .another-sevice-continer-frist {
+    top: 58%;
+    right: 7%;
+    /* opacity: 1; */
+    visibility: visible;
+    transition: all 4.5s ease;
+    transition-delay: 0.7s;
+    cursor: pointer;
+    /* width: fit-content; */
+}
+
+.another-sevice-continer-frist .another-sevice-continer-scound-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-scound-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-third-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-third-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-forth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-forth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-fifth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.another-sevice-continer-frist .another-sevice-continer-fifth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+@keyframes identifier {
+    0% {
+        width: 356px;
+        height: 356px;
+        top: 100px;
+        right: 500px;
+        transition: all 1s ease;
+    }
+    100% {
+        width: 1391px;
+        height: 887px;
+        top: -80px;
+        right: -100px;
+    }
+}
+
+@keyframes identifierone {
+    0% {
+        top: 4%;
+        right: 25%;
+    }
+    25% {
+        top: 4%;
+        right: 20%;
+    }
+    50% {
+        top: 4%;
+        right: 15%;
+    }
+    75% {
+        top: 4%;
+        right: 10%;
+    }
+    100% {
+        top: 4%;
+        right: 4%;
+    }
+}
+
+.scound {
+    position: relative;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    border-radius: 54px;
+    direction: rtl;
+}
+
+.sevice-continer-scound {
+    max-width: 356px;
+    height: 356px;
+    cursor: pointer;
+}
+
+.sevice-continer-scound-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 356px;
+    height: 356px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.sevice-continer-scound-image-titel {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 41px;
+    font-family: myFirstFont;
+}
+
+.scound .sevice-continer-scound-content {
+    visibility: hidden;
+}
+
+.sevice-continer-scound-content .sevice-continer-scound-content-titel h1 {
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 33px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sevice-continer-scound-content-subtitel p {
+    font-size: 33px;
+    width: 704px;
+    height: 225px;
+    color: white;
+    font-family: myFirstFont;
+    font-weight: normal;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.scound.active {
+    position: absolute;
+    width: 1391px;
+    height: 887px;
+    z-index: 9;
+    top: -80px;
+    right: -100px;
+    animation: identifier 1s;
+}
+
+.scound.active .sevice-continer-scound {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    animation: identifierone 0.5s;
+    cursor: default;
+}
+
+.scound.active .sevice-continer-scound-image-titel {
+    display: none;
+}
+
+.scound.active .sevice-continer-scound-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    height: 321px;
+    top: 4.5%;
+    right: 34%;
+    visibility: visible;
+    transition: all 2s ease;
+}
+
+.scound.active .sevice-continer-scound-content-titel h1 {
+    font-size: 45px;
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.scound.active .sevice-continer-scound-content-subtitel p {
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.scound .fa-times {
+    opacity: 0;
+    display: none;
+}
+
+.scound.active .fa-times {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 41px;
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.scound .another-sevice-continer-scound {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.scound.active .another-sevice-continer-scound {
+    top: 58%;
+    right: 7%;
+    visibility: visible;
+    transition: all 4.5s ease;
+    transition-delay: 0.7s;
+    cursor: pointer;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-frist-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-frist-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-third-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-third-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-forth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-forth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-fifth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.another-sevice-continer-scound .another-sevice-continer-fifth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.sevice-continer-third {
+    max-width: 356px;
+    height: 356px;
+    cursor: pointer;
+}
+
+.sevice-continer-third-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 356px;
+    height: 356px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.sevice-continer-third-image-titel {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 41px;
+    font-family: myFirstFont;
+}
+
+.third {
+    position: relative;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    border-radius: 54px;
+    direction: rtl;
+}
+
+.third .sevice-continer-third-content {
+    visibility: hidden;
+}
+
+.sevice-continer-third-content .sevice-continer-third-content-titel {
+    visibility: hidden;
+}
+
+.sevice-continer-third-content .sevice-continer-third-content-titel h1 {
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 33px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sevice-continer-third-content-subtitel p {
+    font-size: 33px;
+    width: 704px;
+    height: 225px;
+    color: white;
+    font-family: myFirstFont;
+    font-weight: normal;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.third.active {
+    position: absolute;
+    width: 1391px;
+    height: 887px;
+    z-index: 9;
+    top: -80px;
+    right: -100px;
+    animation: identifier 1s;
+}
+
+.third.active .sevice-continer-third {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    animation: identifierone 0.5s;
+    cursor: default;
+}
+
+.third.active .sevice-continer-third-image-titel {
+    display: none;
+}
+
+.third.active .sevice-continer-third-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    height: 321px;
+    top: 4.5%;
+    right: 34%;
+    visibility: visible;
+    transition: all 2s ease;
+}
+
+.third.active .sevice-continer-third-content .sevice-continer-third-content-titel {
+    visibility: visible;
+}
+
+.third.active .sevice-continer-third-content-titel h1 {
+    font-size: 45px;
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.third.active .sevice-continer-third-content-subtitel p {
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.third .fa-times {
+    opacity: 0;
+    display: none;
+}
+
+.third.active .fa-times {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 41px;
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.third .another-sevice-continer-third {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.third.active .another-sevice-continer-third {
+    top: 58%;
+    right: 7%;
+    visibility: visible;
+    transition: all 4.5s ease;
+    transition-delay: 0.7s;
+    cursor: pointer;
+}
+
+.another-sevice-continer-third .another-sevice-continer-frist-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-third .another-sevice-continer-frist-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-third .another-sevice-continer-scound-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-third .another-sevice-continer-scound-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-third .another-sevice-continer-forth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-third .another-sevice-continer-forth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-third .another-sevice-continer-fifth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.another-sevice-continer-third .another-sevice-continer-fifth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.sevice-continer-forth {
+    max-width: 356px;
+    height: 356px;
+}
+
+.sevice-continer-forth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 356px;
+    height: 356px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.sevice-continer-forth-image-titel {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 41px;
+    font-family: myFirstFont;
+}
+
+.forth {
+    position: relative;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    border-radius: 54px;
+    direction: rtl;
+}
+
+.forth .sevice-continer-forth-content {
+    visibility: hidden;
+}
+
+.sevice-continer-forth-content .sevice-continer-forth-content-titel {
+    visibility: hidden;
+}
+
+.sevice-continer-forth-content .sevice-continer-forth-content-titel h1 {
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 33px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sevice-continer-forth-content-subtitel p {
+    font-size: 33px;
+    width: 704px;
+    height: 225px;
+    color: white;
+    font-family: myFirstFont;
+    font-weight: normal;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.forth.active {
+    position: absolute;
+    width: 1391px;
+    height: 887px;
+    z-index: 9;
+    top: -80px;
+    right: -100px;
+    animation: identifier 1s;
+}
+
+.forth.active .sevice-continer-forth {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    animation: identifierone 0.5s;
+    cursor: default;
+}
+
+.forth.active .sevice-continer-forth-image-titel {
+    display: none;
+}
+
+.forth.active .sevice-continer-forth-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    height: 321px;
+    top: 4.5%;
+    right: 34%;
+    visibility: visible;
+    transition: all 2s ease;
+}
+
+.forth.active .sevice-continer-forth-content .sevice-continer-forth-content-titel {
+    visibility: visible;
+}
+
+.forth.active .sevice-continer-forth-content-titel h1 {
+    font-size: 45px;
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.forth.active .sevice-continer-forth-content-subtitel p {
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.forth .fa-times {
+    opacity: 0;
+    display: none;
+}
+
+.forth.active .fa-times {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 41px;
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.forth .another-sevice-continer-forth {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.forth.active .another-sevice-continer-forth {
+    top: 58%;
+    right: 7%;
+    visibility: visible;
+    transition: all 4.5s ease;
+    transition-delay: 0.7s;
+    cursor: pointer;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-frist-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-frist-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-scound-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-scound-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-third-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 38px;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-third-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-fifth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 269px;
+    height: 270px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.another-sevice-continer-forth .another-sevice-continer-fifth-image-titel {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 32px;
+    font-family: myFirstFont;
+}
+
+.sevice-continer-fifth {
+    max-width: 356px;
+    height: 356px;
+}
+
+.sevice-continer-fifth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 356px;
+    height: 356px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.sevice-continer-fifth-image-titel {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 41px;
+    font-family: myFirstFont;
+}
+
+.fifth {
+    position: relative;
+    width: 356px;
+    height: 356px;
+    background-color: #1C1C1E;
+    border-radius: 54px;
+    direction: rtl;
+}
+
+.fifth .sevice-continer-fifth-content {
+    visibility: hidden;
+}
+
+.sevice-continer-fifth-content .sevice-continer-fifth-content-titel {
+    visibility: hidden;
+}
+
+.sevice-continer-fifth-content .sevice-continer-fifth-content-titel h1 {
+    font-size: 45px;
+    font-family: myScoundFont;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 33px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sevice-continer-fifth-content-subtitel p {
+    font-size: 33px;
+    width: 704px;
+    height: 225px;
+    color: white;
+    font-family: myFirstFont;
+    font-weight: normal;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.fifth.active {
+    position: absolute;
+    width: 1391px;
+    height: 887px;
+    z-index: 9;
+    top: -80px;
+    right: -100px;
+    animation: identifier 1s;
+}
+
+.fifth.active .sevice-continer-fifth {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    animation: identifierone 0.5s;
+    cursor: default;
+}
+
+.fifth.active .sevice-continer-fifth-image-titel {
+    display: none;
+}
+
+.fifth.active .sevice-continer-fifth-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    height: 321px;
+    top: 4.5%;
+    right: 34%;
+    visibility: visible;
+    transition: all 2s ease;
+}
+
+.fifth.active .sevice-continer-fifth-content .sevice-continer-fifth-content-titel {
+    visibility: visible;
+}
+
+.fifth.active .sevice-continer-fifth-content-titel h1 {
+    font-size: 45px;
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.fifth.active .sevice-continer-fifth-content-subtitel p {
+    visibility: visible;
+    transition: all 4.5s ease;
+    cursor: text;
+}
+
+.fifth .fa-times {
+    opacity: 0;
+    display: none;
+}
+
+.fifth.active .fa-times {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 41px;
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.fifth .another-sevice-continer-fifth {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.fifth.active .another-sevice-continer-fifth {
+    top: 58%;
+    right: 7%;
+    visibility: visible;
+    transition: all 4.5s ease;
+    transition-delay: 0.7s;
+    cursor: pointer;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-frist-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 126px;
+    height: 126px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 17px;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-frist-image-titel {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 11px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-scound-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 126px;
+    height: 126px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 17px;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-scound-image-titel {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 11px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-third-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 126px;
+    height: 126px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 17px;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-third-image-titel {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 11px;
+    font-family: myFirstFont;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-forth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 126px;
+    height: 126px;
+    background: url("../Mask\ Group\ 61.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 17px;
+}
+
+.another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 11px;
+    font-family: myFirstFont;
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .service-continer {
+        width: 594px;
+        height: 381px;
+    }
+    .sevice-continer-text {
+        width: 182px;
+        height: 182px;
+    }
+    .sevice-continer-text-titel {
+        font-size: 50px;
+        color: #E4122C;
+        font-family: myScoundFont;
+    }
+    .sevice-continer-text-subtitel {
+        font-size: 18px;
+        width: 137px;
+        height: 72px;
+        direction: rtl;
+        text-align: justify;
+        font-family: myFirstFont;
+    }
+    .c {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-frist {
+        position: absolute;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        transition: 0s ease;
+        border-radius: 54px;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        transition: 0s ease;
+    }
+    .sevice-continer-frist-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-frist-content .sevice-continer-frist-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .c .another-sevice-continer-frist {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        width: 0px;
+        visibility: hidden;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .c.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .c.active .sevice-continer-frist {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .c.active .sevice-continer-frist-image-titel {
+        display: none;
+    }
+    .c.active .sevice-continer-frist-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 36%;
+        opacity: 1;
+        transition: all 2s ease;
+    }
+    .c.active .sevice-continer-frist-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .c.active .sevice-continer-frist-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .c .fa-times {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    .c.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        visibility: visible;
+        display: block;
+    }
+    .c.active .another-sevice-continer-frist {
+        top: 58%;
+        right: 7%;
+        opacity: 1;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+        width: fit-content;
+    }
+    @keyframes identifier {
+        0% {
+            width: 182px;
+            height: 182px;
+            top: 100px;
+            right: 500px;
+            transition: all 1s ease;
+        }
+        100% {
+            width: 632px;
+            height: 418px;
+            top: -18px;
+            right: -7px;
+        }
+    }
+    @keyframes identifierone {
+        0% {
+            top: 4%;
+            right: 25%;
+        }
+        25% {
+            top: 4%;
+            right: 20%;
+        }
+        50% {
+            top: 4%;
+            right: 15%;
+        }
+        75% {
+            top: 4%;
+            right: 10%;
+        }
+        100% {
+            top: 4%;
+            right: 4%;
+        }
+    }
+    /* /////////////////// */
+    .scound {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-scound {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-scound-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-scound-content .sevice-continer-scound-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .scound .another-sevice-continer-scound {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .scound.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .scound.active .sevice-continer-scound {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .scound.active .sevice-continer-scound-image-titel {
+        display: none;
+    }
+    .scound.active .sevice-continer-scound-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .scound.active .sevice-continer-scound-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound.active .sevice-continer-scound-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .scound.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .scound.active .another-sevice-continer-scound {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////// */
+    .third {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-third {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-third-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-third-content .sevice-continer-third-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-third-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .third .another-sevice-continer-third {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .third.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .third.active .sevice-continer-third {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .third.active .sevice-continer-third-image-titel {
+        display: none;
+    }
+    .third.active .sevice-continer-third-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .third.active .sevice-continer-third-content .sevice-continer-third-content-titel {
+        visibility: visible;
+    }
+    .third.active .sevice-continer-third-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third.active .sevice-continer-third-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .third.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .third.active .another-sevice-continer-third {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////////// */
+    .forth {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-forth {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-forth-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-forth-content .sevice-continer-forth-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .forth .another-sevice-continer-forth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .forth.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .forth.active .sevice-continer-forth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .forth.active .sevice-continer-forth-image-titel {
+        display: none;
+    }
+    .forth.active .sevice-continer-forth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .forth.active .sevice-continer-forth-content .sevice-continer-forth-content-titel {
+        visibility: visible;
+    }
+    .forth.active .sevice-continer-forth-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth.active .sevice-continer-forth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .forth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .forth.active .another-sevice-continer-forth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////// */
+    .fifth {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-fifth {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-fifth-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-fifth-content .sevice-continer-fifth-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .fifth .another-sevice-continer-fifth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .fifth.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .fifth.active .sevice-continer-fifth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .fifth.active .sevice-continer-fifth-image-titel {
+        display: none;
+    }
+    .fifth.active .sevice-continer-fifth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .fifth.active .sevice-continer-fifth-content .sevice-continer-fifth-content-titel {
+        visibility: visible;
+    }
+    .fifth.active .sevice-continer-fifth-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth.active .sevice-continer-fifth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .fifth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .fifth.active .another-sevice-continer-fifth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////////////////////// */
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .service-continer {
+        width: 594px;
+        height: 381px;
+    }
+    .sevice-continer-text {
+        width: 182px;
+        height: 182px;
+    }
+    .sevice-continer-text-titel {
+        font-size: 50px;
+        color: #E4122C;
+        font-family: myScoundFont;
+    }
+    .sevice-continer-text-subtitel {
+        font-size: 18px;
+        width: 137px;
+        height: 72px;
+        direction: rtl;
+        text-align: justify;
+        font-family: myFirstFont;
+    }
+    .c {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-frist {
+        position: absolute;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        transition: 0s ease;
+        border-radius: 54px;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        transition: 0s ease;
+    }
+    .sevice-continer-frist-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-frist-content .sevice-continer-frist-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .c .another-sevice-continer-frist {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        width: 0px;
+        visibility: hidden;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .c.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .c.active .sevice-continer-frist {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .c.active .sevice-continer-frist-image-titel {
+        display: none;
+    }
+    .c.active .sevice-continer-frist-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 36%;
+        opacity: 1;
+        transition: all 2s ease;
+    }
+    .c.active .sevice-continer-frist-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .c.active .sevice-continer-frist-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .c .fa-times {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    .c.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        visibility: visible;
+        display: block;
+    }
+    .c.active .another-sevice-continer-frist {
+        top: 58%;
+        right: 7%;
+        opacity: 1;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+        width: fit-content;
+    }
+    @keyframes identifier {
+        0% {
+            width: 182px;
+            height: 182px;
+            top: 100px;
+            right: 500px;
+            transition: all 1s ease;
+        }
+        100% {
+            width: 632px;
+            height: 418px;
+            top: -18px;
+            right: -7px;
+        }
+    }
+    @keyframes identifierone {
+        0% {
+            top: 4%;
+            right: 25%;
+        }
+        25% {
+            top: 4%;
+            right: 20%;
+        }
+        50% {
+            top: 4%;
+            right: 15%;
+        }
+        75% {
+            top: 4%;
+            right: 10%;
+        }
+        100% {
+            top: 4%;
+            right: 4%;
+        }
+    }
+    /* /////////////////// */
+    .scound {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-scound {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-scound-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-scound-content .sevice-continer-scound-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .scound .another-sevice-continer-scound {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .scound.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .scound.active .sevice-continer-scound {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .scound.active .sevice-continer-scound-image-titel {
+        display: none;
+    }
+    .scound.active .sevice-continer-scound-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .scound.active .sevice-continer-scound-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound.active .sevice-continer-scound-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .scound.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .scound.active .another-sevice-continer-scound {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////// */
+    .third {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-third {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-third-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-third-content .sevice-continer-third-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-third-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .third .another-sevice-continer-third {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .third.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .third.active .sevice-continer-third {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .third.active .sevice-continer-third-image-titel {
+        display: none;
+    }
+    .third.active .sevice-continer-third-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .third.active .sevice-continer-third-content .sevice-continer-third-content-titel {
+        visibility: visible;
+    }
+    .third.active .sevice-continer-third-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third.active .sevice-continer-third-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .third.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .third.active .another-sevice-continer-third {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////////// */
+    .forth {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-forth {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-forth-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-forth-content .sevice-continer-forth-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .forth .another-sevice-continer-forth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .forth.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .forth.active .sevice-continer-forth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .forth.active .sevice-continer-forth-image-titel {
+        display: none;
+    }
+    .forth.active .sevice-continer-forth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .forth.active .sevice-continer-forth-content .sevice-continer-forth-content-titel {
+        visibility: visible;
+    }
+    .forth.active .sevice-continer-forth-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth.active .sevice-continer-forth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .forth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .forth.active .another-sevice-continer-forth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////// */
+    .fifth {
+        position: relative;
+        width: 182px;
+        height: 182px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-fifth {
+        max-width: 182px;
+        height: 182px;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 182px;
+        height: 182px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-fifth-image-titel {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 15px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-fifth-content .sevice-continer-fifth-content-titel h1 {
+        font-size: 18px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-content-subtitel p {
+        font-size: 15px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .fifth .another-sevice-continer-fifth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .fifth.active {
+        position: absolute;
+        width: 632px;
+        height: 418px;
+        z-index: 9;
+        top: -18px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .fifth.active .sevice-continer-fifth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .fifth.active .sevice-continer-fifth-image-titel {
+        display: none;
+    }
+    .fifth.active .sevice-continer-fifth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .fifth.active .sevice-continer-fifth-content .sevice-continer-fifth-content-titel {
+        visibility: visible;
+    }
+    .fifth.active .sevice-continer-fifth-content-titel h1 {
+        font-size: 18px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth.active .sevice-continer-fifth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .fifth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .fifth.active .another-sevice-continer-fifth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////////////////////// */
+}
+
+@media screen and (max-width: 600px) {
+    .service-continer {
+        width: 321px;
+        height: 492px;
+    }
+    .sevice-continer-text {
+        width: 150px;
+        height: 150px;
+    }
+    .sevice-continer-text-titel {
+        font-size: 38px;
+        color: #E4122C;
+        font-family: myScoundFont;
+    }
+    .sevice-continer-text-subtitel {
+        font-size: 14px;
+        width: 105px;
+        height: 57px;
+        direction: rtl;
+        text-align: justify;
+        font-family: myFirstFont;
+    }
+    .c {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-frist {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        transition: 0s ease;
+        border-radius: 54px;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 150px;
+        height: 150px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        transition: 0s ease;
+    }
+    .sevice-continer-frist-image-titel {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 11.5px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-frist-content .sevice-continer-frist-content-titel h1 {
+        font-size: 16px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-frist-content-subtitel p {
+        font-size: 11.5px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .c .another-sevice-continer-frist {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        width: 0px;
+        visibility: hidden;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-frist .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    /* /////////////////// */
+    .scound {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-scound {
+        max-width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 150px;
+        height: 150px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-scound-image-titel {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 11.5px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-scound-content .sevice-continer-scound-content-titel h1 {
+        font-size: 16px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-scound-content-subtitel p {
+        font-size: 11.5px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .scound .another-sevice-continer-scound {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-scound .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .scound.active {
+        position: absolute;
+        width: 632px;
+        height: 416px;
+        z-index: 9;
+        top: -16px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .scound.active .sevice-continer-scound {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .scound.active .sevice-continer-scound-image-titel {
+        display: none;
+    }
+    .scound.active .sevice-continer-scound-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .scound.active .sevice-continer-scound-content-titel h1 {
+        font-size: 16px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound.active .sevice-continer-scound-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .scound .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .scound.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .scound.active .another-sevice-continer-scound {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////// */
+    .third {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-third {
+        max-width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+    .sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 150px;
+        height: 150px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-third-image-titel {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 11.5px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-third-content .sevice-continer-third-content-titel h1 {
+        font-size: 16px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-third-content-subtitel p {
+        font-size: 11.5px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .third .another-sevice-continer-third {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-third .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .third.active {
+        position: absolute;
+        width: 632px;
+        height: 416px;
+        z-index: 9;
+        top: -16px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .third.active .sevice-continer-third {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .third.active .sevice-continer-third-image-titel {
+        display: none;
+    }
+    .third.active .sevice-continer-third-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .third.active .sevice-continer-third-content .sevice-continer-third-content-titel {
+        visibility: visible;
+    }
+    .third.active .sevice-continer-third-content-titel h1 {
+        font-size: 16px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third.active .sevice-continer-third-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .third .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .third.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .third.active .another-sevice-continer-third {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////////// */
+    .forth {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-forth {
+        max-width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 150px;
+        height: 150px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-forth-image-titel {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 11.5px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-forth-content .sevice-continer-forth-content-titel h1 {
+        font-size: 16px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-forth-content-subtitel p {
+        font-size: 11.5px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .forth .another-sevice-continer-forth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-third-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-forth .another-sevice-continer-fifth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .forth.active {
+        position: absolute;
+        width: 632px;
+        height: 416px;
+        z-index: 9;
+        top: -16px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .forth.active .sevice-continer-forth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .forth.active .sevice-continer-forth-image-titel {
+        display: none;
+    }
+    .forth.active .sevice-continer-forth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .forth.active .sevice-continer-forth-content .sevice-continer-forth-content-titel {
+        visibility: visible;
+    }
+    .forth.active .sevice-continer-forth-content-titel h1 {
+        font-size: 16px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth.active .sevice-continer-forth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .forth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .forth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .forth.active .another-sevice-continer-forth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ///////////////////////// */
+    .fifth {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #1C1C1E;
+        border-radius: 38px;
+        direction: rtl;
+    }
+    .sevice-continer-fifth {
+        max-width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 150px;
+        height: 150px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .sevice-continer-fifth-image-titel {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 11.5px;
+        font-family: myFirstFont;
+    }
+    .sevice-continer-fifth-content .sevice-continer-fifth-content-titel h1 {
+        font-size: 16px;
+        font-family: myScoundFont;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 12px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .sevice-continer-fifth-content-subtitel p {
+        font-size: 11.5px;
+        width: 321px;
+        height: 100px;
+        color: white;
+        font-family: myFirstFont;
+        font-weight: normal;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .fifth .another-sevice-continer-fifth {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        visibility: hidden;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-frist-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-scound-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 126px;
+        height: 126px;
+        background: url("../Mask\ Group\ 61.png");
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 17px;
+    }
+    .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
+        font-size: 12px;
+        color: white;
+        margin-bottom: 11px;
+        font-family: myFirstFont;
+    }
+    .fifth.active {
+        position: absolute;
+        width: 632px;
+        height: 416px;
+        z-index: 9;
+        top: -16px;
+        right: -7px;
+        animation: identifier 1s;
+    }
+    .fifth.active .sevice-continer-fifth {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        animation: identifierone 0.5s;
+        cursor: default;
+    }
+    .fifth.active .sevice-continer-fifth-image-titel {
+        display: none;
+    }
+    .fifth.active .sevice-continer-fifth-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+        height: 321px;
+        top: 4.5%;
+        right: 34%;
+        visibility: visible;
+        transition: all 2s ease;
+    }
+    .fifth.active .sevice-continer-fifth-content .sevice-continer-fifth-content-titel {
+        visibility: visible;
+    }
+    .fifth.active .sevice-continer-fifth-content-titel h1 {
+        font-size: 16px;
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth.active .sevice-continer-fifth-content-subtitel p {
+        visibility: visible;
+        transition: all 4.5s ease;
+        cursor: text;
+    }
+    .fifth .fa-times {
+        opacity: 0;
+        display: none;
+    }
+    .fifth.active .fa-times {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        font-size: 28px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+        transition: all 1.5s ease;
+        cursor: pointer;
+        display: block;
+    }
+    .fifth.active .another-sevice-continer-fifth {
+        top: 58%;
+        right: 7%;
+        visibility: visible;
+        transition: all 4.5s ease;
+        transition-delay: 0.7s;
+        cursor: pointer;
+    }
+    /* ////////////////////////////////////////// */
+}
