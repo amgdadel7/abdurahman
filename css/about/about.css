@@ -379,9 +379,10 @@ body {
     position: relative;
     background-color: #F2F2F7;
     background-image: url('../../images/about/Group\ 6385.png');
-    background-size: contain;
-    width: 100vw;
-    height: 100vh;
+    background-size: 1948.48px 819.46px;
+    background-repeat: no-repeat;
+        width: 100vw;
+    height: 619px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -390,7 +391,7 @@ body {
 }
 
 .section-six-card-contenr {
-    width: 838px;
+    width: 1132px;
     height: 492px;
     display: flex;
     flex-direction: row-reverse;
@@ -401,19 +402,20 @@ body {
 }
 
 .section-six-title {
-    font-size: 4 5px;
+    font-size: 45px;
     font-weight: normal;
     font-family: myScoundFont;
     color: #E4122C;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-top: 130px;
 }
 
 .card-one {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 39px;
-    width: 172px;
-    height: 154px;
+    width: 261px;
+    height: 235px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -422,17 +424,17 @@ body {
 .card-one>a {
     background-image: url('../../images/about/Group\ 6978.svg');
     background-repeat: no-repeat;
-    background-size: 46.71px 88.9px;
-    width: 46.71px;
-    height: 88.9px;
+    background-size: contain;
+    width: 71px;
+    height: 139.14px;
 }
 
 .card-two {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 39px;
-    width: 172px;
-    height: 154px;
+    width: 261px;
+    height: 235px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -441,17 +443,17 @@ body {
 .card-two>a {
     background-image: url('../../images/about/Group\ 6979.svg');
     background-repeat: no-repeat;
-    background-size: 65.36px 82.98px;
-    width: 65.36px;
-    height: 82.98px;
+    background-size: contain;
+    width: 99.36px;
+    height: 130.14px;
 }
 
 .card-three {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 39px;
-    width: 172px;
-    height: 154px;
+    width: 261px;
+    height: 235px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -460,17 +462,17 @@ body {
 .card-three>a {
     background-image: url('../../images/about/Group\ 6980.svg');
     background-repeat: no-repeat;
-    background-size: 57.23px 87.9px;
-    width: 57.23px;
-    height: 87.9px;
+    background-size: contain;
+    width: 87px;
+    height: 139.14px;
 }
 
 .card-four {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 39px;
-    width: 172px;
-    height: 154px;
+    width: 261px;
+    height: 235px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -479,9 +481,9 @@ body {
 .card-four>a {
     background-image: url('../../images/about/Group\ 6983.svg') !important;
     background-repeat: no-repeat;
-    background-size: 49.87px 84.96px;
-    width: 49.87px;
-    height: 84.96px;
+    background-size: contain;
+    width: 75.81px;
+    height: 133.14px;
 }
 
 @media screen and (max-width:600px) {
@@ -762,22 +764,24 @@ body {
         background-image: url('../../images/about/Group\ 6385.png');
         background-size: contain;
         width: 100vw;
-        height: 230.5PX;
+        height: 367PX;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
+        background-repeat: repeat-y;
     }
     .section-six-card-contenr {
-        width: 254px;
-        height: 149px;
+        width: 234px;
+        height: 212px;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 50px;
     }
     .section-six-title {
         font-size: 20px;
@@ -785,47 +789,50 @@ body {
         font-family: myScoundFont;
         color: #E4122C;
         margin-bottom: 30px;
+        margin-top: 50px;
     }
     .card-one {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 111px;
+        height: 100px;
         align-content: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 12px;
     }
     .card-one>a {
         background-image: url('../../images/about/Group\ 6978.svg');
         background-repeat: no-repeat;
-        background-size: 46.71px 88.9px;
-        width: 46.71px;
-        height: 88.9px;
+        background-size: contain;
+        width: 30.02px;
+        height: 58.71px;
     }
     .card-two {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 111px;
+        height: 100px;
         align-content: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 12px;
     }
     .card-two>a {
         background-image: url('../../images/about/Group\ 6979.svg');
         background-repeat: no-repeat;
-        background-size: 65.36px 82.98px;
-        width: 65.36px;
-        height: 82.98px;
+        background-size: contain;
+        width: 42.01px;
+        height: 55.71px;
     }
     .card-three {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 111px;
+        height: 100px;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -833,26 +840,27 @@ body {
     .card-three>a {
         background-image: url('../../images/about/Group\ 6980.svg');
         background-repeat: no-repeat;
-        background-size: 57.23px 87.9px;
-        width: 57.23px;
-        height: 87.9px;
+        background-size: contain;
+        width: 36.79px;
+        height: 58.79px;
     }
     .card-four {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 111px;
+        height: 100px;
         align-content: center;
         justify-content: center;
         align-items: center;
+     
     }
     .card-four>a {
         background-image: url('../../images/about/Group\ 6983.svg') !important;
         background-repeat: no-repeat;
         background-size: 49.87px 84.96px;
-        width: 49.87px;
-        height: 84.96px;
+        width: 32.06px;
+        height: 55.79px;
     }
 }
 
@@ -1130,9 +1138,9 @@ body {
         position: relative;
         background-color: #F2F2F7;
         background-image: url('../../images/about/Group\ 6385.png');
-        background-size: contain;
+        background-size: 768.24px 461.74px;
         width: 100vw;
-        height: 328px;
+        height: 335px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -1140,14 +1148,15 @@ body {
         align-items: center;
     }
     .section-six-card-contenr {
-        width: 518px;
-        height: 340px;
+        width: 601px;
+        height: 126px;
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 72px;
     }
     .section-six-title {
         font-size: 24px;
@@ -1155,13 +1164,14 @@ body {
         font-family: myScoundFont;
         color: #E4122C;
         margin-bottom: 30px;
+        margin-top: 72px;
     }
     .card-one {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px ;
+        width: 139px;
+        height: 126px;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -1169,16 +1179,16 @@ body {
     .card-one>a {
         background-image: url('../../images/about/Group\ 6978.svg');
         background-repeat: no-repeat;
-        background-size: 46.71px 88.9px;
-        width: 46.71px;
-        height: 88.9px;
+        background-size: contain;
+        width: 37.91px;
+        height: 72.87px;
     }
     .card-two {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 139px;
+        height: 126px;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -1186,16 +1196,16 @@ body {
     .card-two>a {
         background-image: url('../../images/about/Group\ 6979.svg');
         background-repeat: no-repeat;
-        background-size: 65.36px 82.98px;
-        width: 65.36px;
-        height: 82.98px;
+        background-size: contains;
+        width: 51.65px;
+        height: 66.43px;
     }
     .card-three {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 139px;
+        height: 126px;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -1203,16 +1213,16 @@ body {
     .card-three>a {
         background-image: url('../../images/about/Group\ 6980.svg');
         background-repeat: no-repeat;
-        background-size: 57.23px 87.9px;
-        width: 57.23px;
-        height: 87.9px;
+        background-size: contain;
+        width: 46.45px;
+        height: 72.87px;
     }
     .card-four {
         display: flex;
         background-color: #FFFFFF;
-        border-radius: 39px;
-        width: 172px;
-        height: 154px;
+        border-radius: 30px;
+        width: 139px;
+        height: 126px;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -1220,9 +1230,9 @@ body {
     .card-four>a {
         background-image: url('../../images/about/Group\ 6983.svg') !important;
         background-repeat: no-repeat;
-        background-size: 49.87px 84.96px;
-        width: 49.87px;
-        height: 84.96px;
+        background-size: contain;
+        width: 40.48px;
+        height: 70.66px;
     }
 }
 
@@ -1510,7 +1520,7 @@ body {
         background-size: 1283.59px 623.06px;
         background-repeat: no-repeat;
         width: 100vw;
-        height: 416px !important;
+        height: 421px !important;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -1533,6 +1543,7 @@ body {
         font-family: myScoundFont;
         color: #E4122C;
         margin-bottom: 30px;
+        margin-top: 92px;
     }
     .card-one {
         display: flex;
