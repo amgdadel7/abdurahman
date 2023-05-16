@@ -168,7 +168,7 @@ let mymedia = window.matchMedia('(max-width:600px)');
 
 function firstclick(mymedia) {
     if (mymedia.matches) {
-        window.open("www.google.com", "_self");
+        window.open("../personal.html#money-transactions", "_self");
 
     } else {
         // function firstclick() {
@@ -194,7 +194,8 @@ function continerfristscoundimage() {
 
 function scoundclick(mymedia) {
     if (mymedia.matches) {
-        window.open("www.google.com", "_self");
+        window.open("../personal.html#recharge-balance", "_self");
+        
 
     } else {
         // function () {
@@ -213,7 +214,7 @@ function act2(event) {
 
 function thirdclick(mymedia) {
     if (mymedia.matches) {
-        window.open("www.google.com", "_self");
+       window.open("../personal.html#Cash-deposit", "_self");
 
     } else {
         // function () {
@@ -232,7 +233,7 @@ function act3(event) {
 
 function forthclick(mymedia) {
     if (mymedia.matches) {
-        window.open("www.google.com", "_self");
+        window.open("../personal.html#Payment-services", "_self");
 
     } else {
         // function () {
@@ -251,7 +252,7 @@ function act4(event) {
 
 function fifthclick(mymedia) {
     if (mymedia.matches) {
-        window.open("www.google.com", "_self");
+        window.open("../personal.html#Payment-purchases", "_self");
 
     } else {
         // function () {

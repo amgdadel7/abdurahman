@@ -9042,6 +9042,7 @@ iframe {
     right: 7%;
     visibility: visible;
     transition: all 4.5s ease;
+      transition-delay: 0s;
     transition-delay: 0.7s;
     cursor: pointer;
 }
@@ -9050,19 +9051,21 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 126px;
-    height: 126px;
+    width: 269px;
+    height: 270px;
     background: url("../Mask\ Group\ 61.png");
+      background-repeat: repeat;
+      background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
-    margin-left: 17px;
+    margin-left: 38px;
 }
 
 .another-sevice-continer-fifth .another-sevice-continer-frist-image-titel {
-    font-size: 12px;
+    font-size: 23px;
     color: white;
-    margin-bottom: 11px;
+    margin-bottom: 32px;
     font-family: myFirstFont;
 }
 
@@ -9070,19 +9073,21 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 126px;
-    height: 126px;
+    width: 269px;
+    height: 270px;
     background: url("../Mask\ Group\ 61.png");
+      background-repeat: repeat;
+      background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
-    margin-left: 17px;
+    margin-left: 38px;
 }
 
 .another-sevice-continer-fifth .another-sevice-continer-scound-image-titel {
-    font-size: 12px;
+    font-size: 23px;
     color: white;
-    margin-bottom: 11px;
+    margin-bottom: 32px;
     font-family: myFirstFont;
 }
 
@@ -9090,19 +9095,21 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 126px;
-    height: 126px;
+    width: 269px;
+    height: 270px;
     background: url("../Mask\ Group\ 61.png");
+      background-repeat: repeat;
+      background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
-    margin-left: 17px;
+    margin-left: 38px;
 }
 
 .another-sevice-continer-fifth .another-sevice-continer-third-image-titel {
-    font-size: 12px;
+    font-size: 23px;
     color: white;
-    margin-bottom: 11px;
+    margin-bottom: 32px;
     font-family: myFirstFont;
 }
 
@@ -9110,19 +9117,21 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 126px;
-    height: 126px;
+    width: 269px;
+    height: 270px;
     background: url("../Mask\ Group\ 61.png");
+      background-repeat: repeat;
+      background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
-    margin-left: 17px;
+    margin-left: 38px;
 }
 
 .another-sevice-continer-fifth .another-sevice-continer-forth-image-titel {
-    font-size: 12px;
+    font-size: 23px;
     color: white;
-    margin-bottom: 11px;
+    margin-bottom: 32px;
     font-family: myFirstFont;
 }
 @media (min-width: 1201px) and (max-width: 1440px) {
