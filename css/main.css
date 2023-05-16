@@ -3900,7 +3900,7 @@ p {
     }
     .continer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-bottom: 10px;
         height: 100vh;
         justify-content: center;
