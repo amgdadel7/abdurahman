@@ -858,7 +858,7 @@ body {
     .card-four>a {
         background-image: url('../../images/about/Group\ 6983.svg') !important;
         background-repeat: no-repeat;
-        background-size: 49.87px 84.96px;
+        background-size: contain;
         width: 32.06px;
         height: 55.79px;
     }
