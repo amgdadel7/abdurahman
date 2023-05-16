@@ -3236,7 +3236,7 @@ p {
     }
 }
 
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px) and (prefers-color-scheme: light) {
     .slide-content {
         margin: 0 55px;
         min-height: 500px !important;
@@ -3678,7 +3678,7 @@ p {
     }
 }
 
-@media (min-width: 376px) and (max-width: 428px) {
+@media (min-width: 376px) and (max-width: 428px) and (prefers-color-scheme: light) {
     .slide-content {
         margin: 0 60px
     }
