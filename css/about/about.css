@@ -276,7 +276,16 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
 }
-
+.section-five-title h1 {
+    font-size: 35px;
+    font-weight: normal;
+    font-family: myScoundFont;
+    color: #E4122C;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 43%;
+    top: 15%;
+  }
 .towards-youth {
     display: flex;
     border-radius: 10%;
@@ -667,6 +676,9 @@ body {
         font-family: myScoundFont;
         color: #E4122C;
         margin-bottom: 25px;
+        position: absolute;
+        left: 34%;
+        top: 4%;
     }
     .towards-youth {
         display: flex;
@@ -1036,6 +1048,9 @@ body {
         font-family: myScoundFont;
         color: #E4122C;
         margin-bottom: 37px;
+        position: absolute;
+        left: 38%;
+        top: 4%;
     }
     .towards-youth {
         display: flex;
