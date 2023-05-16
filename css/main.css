@@ -35,7 +35,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color-scheme: light;
 }
 
 .title-tap {
@@ -44,7 +43,6 @@
 
 html {
     height: -webkit-fill-available;
-    color-scheme: light;
 }
 
 main {
@@ -3238,7 +3236,7 @@ p {
     }
 }
 
-@media (min-width: 321px) and (max-width: 375px) and (prefers-color-scheme: light) {
+@media (min-width: 321px) and (max-width: 375px) {
     .slide-content {
         margin: 0 55px;
         min-height: 500px !important;
@@ -3680,7 +3678,7 @@ p {
     }
 }
 
-@media (min-width: 376px) and (max-width: 428px) and (prefers-color-scheme: light) {
+@media (min-width: 376px) and (max-width: 428px) {
     .slide-content {
         margin: 0 60px
     }

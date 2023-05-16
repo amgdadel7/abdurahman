@@ -32,14 +32,12 @@
                                                             margin: 0;
                                                             padding: 0;
                                                             box-sizing: border-box;
-                                                            color-scheme: light;
                                                         }
                                                         
                                                         body {
                                                             background: #f2f2f2;
                                                             top: 70px;
                                                             position: relative;
-                                                            color-scheme: light;
                                                         }
                                                         
                                                         nav {
