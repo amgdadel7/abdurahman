@@ -68,7 +68,6 @@ html {
     /* scroll-behavior: smooth; */
 }
 
-
 .landing {
     /* background-color: #F2F2F7; */
     min-height: 100vh;
@@ -2605,7 +2604,7 @@ p {
     .blog-slider__pagination {
         transform: translateX(-50%);
         left: 50% !important;
-        top: 701px;
+        top: 807px;
         width: 100% !important;
         display: flex;
         justify-content: center;
@@ -7911,8 +7910,11 @@ iframe {
     top: 2vh;
     position: relative;
 }
+
+
 /* ///////////////////////////// */
-.services-section{
+
+.services-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9042,7 +9044,7 @@ iframe {
     right: 7%;
     visibility: visible;
     transition: all 4.5s ease;
-      transition-delay: 0s;
+    transition-delay: 0s;
     transition-delay: 0.7s;
     cursor: pointer;
 }
@@ -9054,8 +9056,8 @@ iframe {
     width: 269px;
     height: 270px;
     background: url("../Mask\ Group\ 61.png");
-      background-repeat: repeat;
-      background-size: auto;
+    background-repeat: repeat;
+    background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -9076,8 +9078,8 @@ iframe {
     width: 269px;
     height: 270px;
     background: url("../Mask\ Group\ 61.png");
-      background-repeat: repeat;
-      background-size: auto;
+    background-repeat: repeat;
+    background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -9098,8 +9100,8 @@ iframe {
     width: 269px;
     height: 270px;
     background: url("../Mask\ Group\ 61.png");
-      background-repeat: repeat;
-      background-size: auto;
+    background-repeat: repeat;
+    background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -9120,8 +9122,8 @@ iframe {
     width: 269px;
     height: 270px;
     background: url("../Mask\ Group\ 61.png");
-      background-repeat: repeat;
-      background-size: auto;
+    background-repeat: repeat;
+    background-size: auto;
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -9134,6 +9136,7 @@ iframe {
     margin-bottom: 32px;
     font-family: myFirstFont;
 }
+
 @media (min-width: 1201px) and (max-width: 1440px) {
     .service-continer {
         width: 594px;
