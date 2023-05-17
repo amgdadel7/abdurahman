@@ -27,7 +27,12 @@ var swiper = new Swiper(".mySwiper", {
         // },
         1250: {
             slidesPerView: 4,
-            spaceBetween: 20,
+            spaceBetween: 40,
         },
     },
 });
+// document.getElementById("restart").addEventListener("click", restart);
+
+function restart() {
+  swiper.slideTo(0);
+}

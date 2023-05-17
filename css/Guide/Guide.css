@@ -209,7 +209,7 @@ div {
     cursor: pointer;
     user-select: none;
     transition: 0.3s ease;
-    width: 162px;
+    width: 239px;
     text-align: center;
     height: 54px;
     background: var(--third-color);
@@ -904,9 +904,9 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: fit-content;
-    height: 403.2px !important;
-    width: 124.84px !important;
+    /* width: fit-content; */
+    /* height: 173px !important;
+    width: 393.23px !important;   */
   }
   /* .swiper-slide, .swiper-slide {
     flex-shrink: 0;
