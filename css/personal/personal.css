@@ -178,7 +178,7 @@ body {
 .read.active{
     overflow-y: scroll;
         min-height: 40px;
-        max-height: 200px;
+        max-height: fit-content;
         height: auto;
         cursor: pointer;
         scroll-behavior: smooth;
