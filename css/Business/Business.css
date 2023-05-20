@@ -55,7 +55,7 @@ body {
     background-image: url('../../images/Business/Path\ 9836.png');
     background-size: contain;
     display: flex;
-    height: fit-content;
+    height: 100vh;
     width: 100vw;
     position: relative;
     flex-direction: column;
@@ -110,8 +110,9 @@ body {
 .section-two {
     background-color: #FFFFFF;
     width: 100vw;
-  min-height: 700px;
-  max-height: fit-content;
+  /* min-height: 700px;
+  max-height: fit-content; */
+  height: 100vh;
     border-radius: 0px 0px 0px 30%;
     display: flex;
     flex-direction: row;
@@ -389,7 +390,7 @@ body {
     .section-three {
         background-color: #F2F2F7;
         width: 100vw;
-        height: 730px;
+        height: 800px;
         background-image: url('../../images/Business/Mask\ Group\ 45.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -403,9 +404,9 @@ body {
     }
     .section-three-description {
         width: 254px;
-        height: 188.96px;
-        direction: rtl;
-        margin-top: 34.6px;
+height: fit-content;
+direction: rtl;
+margin-top: 34.6px;
     }
     .section-three h1 {
         color: #E4122C;
@@ -518,7 +519,7 @@ body {
     .section-two {
         background-color: #FFFFFF;
         width: 100vw;
-        height: 358px;
+    height:650px ;
         border-radius: 0px 0px 0px 300px;
         display: flex;
         flex-direction: row;
@@ -579,7 +580,7 @@ body {
     .section-three {
         background-color: #F2F2F7;
         width: 100vw;
-        height: 408px;
+        height: 650px;
         background-image: url('../../images/Business/Mask\ Group\ 45.png');
         background-repeat: no-repeat;
         background-size: contain;
