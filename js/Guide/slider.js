@@ -18,21 +18,21 @@ var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
         },
         1000: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 20,
         },
-        1080: {
-            slidesPerView: 3,
-            spaceBetween: 60,
-        },
+        // 1100: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 60,
+        // },
         1250: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 20,
         },
     },
 });
-// document.getElementById("restart").addEventListener("click", restart);
 
-function restart() {
-  swiper.slideTo(0);
+function restart(tabBtnClick) {
+
+    swiper[tabBtnClick].slideTo(0);
 }
