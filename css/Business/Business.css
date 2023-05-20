@@ -55,12 +55,14 @@ body {
     background-image: url('../../images/Business/Path\ 9836.png');
     background-size: contain;
     display: flex;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     position: relative;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    position: relative;
+
 }
 
 .section-one .section-one-image {
@@ -69,7 +71,7 @@ body {
     width: 1556px;
     height: 682px;
     border-radius: 54px;
-    position: absolute;
+    position: relative;
     /* right: 0%; */
     top: 190px;
 }
@@ -79,7 +81,7 @@ body {
 }
 
 .section-one-description {
-    position: absolute;
+    position: relative;
     width: 603px;
     height: 308px;
     top: 25%;
@@ -93,6 +95,7 @@ body {
     text-align: right;
     font-family: myScoundFont;
     font-weight: normal;
+    position: relative;
 }
 
 .section-one-description p {
@@ -101,12 +104,14 @@ body {
     text-align: right;
     font-weight: normal;
     font-family: myThirdFont;
+    position: relative;
 }
 
 .section-two {
     background-color: #FFFFFF;
     width: 100vw;
-    height: 100vh;
+  min-height: 700px;
+  max-height: fit-content;
     border-radius: 0px 0px 0px 30%;
     display: flex;
     flex-direction: row;
@@ -114,12 +119,16 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .section-two-description {
     width: 645px;
-    height: 557.41px;
     direction: rtl;
+    position: relative;
+    height: fit-content;
+    position: relative;
+    max-height: fit-content;
 }
 
 .section-two h1 {
@@ -163,18 +172,22 @@ body {
     color: white;
     font-family: myfifthFont;
     font-weight: normal;
+   
 }
 
 .section-two img {
     width: 517px;
     height: 607px;
     margin-left: 126px;
+    position: relative;
 }
 
 .section-three {
     background-color: #F2F2F7;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    height: fit-content;
+    /* max-height: fit-content; */
     background-image: url('../../images/Business/Mask\ Group\ 45.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -185,12 +198,17 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .section-three-description {
     width: 645px;
     height: 557.41px;
     direction: rtl;
+    position: relative;
+    height: fit-content;
+    /* max-height: fit-content; */
+    position: relative;
 }
 
 .section-three h1 {
@@ -240,6 +258,7 @@ body {
     width: 517px;
     height: 607px;
     margin-right: 164.7px;
+    position: relative;
 }
 
 @media screen and (max-width: 600px) {
