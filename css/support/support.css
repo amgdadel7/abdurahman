@@ -112,8 +112,8 @@
     }
     
     .containertitel h1 {
-        font-size: 48px;
-        color: black;
+        font-size: 45px;
+        color: #e4122c;
         font-family: myScoundFont;
         font-weight: normal;
         margin-bottom: 37px;
@@ -136,6 +136,10 @@
         padding: 10px 20px;
         margin-bottom: 28px;
         border-radius: 22px;
+    }
+
+    .wrapper:last-child{
+      margin-bottom: 180px;
     }
     
     .wrapper i {
@@ -203,11 +207,11 @@
     
     #loadMore {
         display: block;
-        font-size: 35px;
-        font-family: myfifthFont !important;
+        font-size: 30px;
+        font-family: myFirstFont !important;
         font-weight: normal;
         text-decoration: none;
-        color: #e4122c;
+        color: black;
     }
     /* #loadMore p {
     font-size: 35px;
@@ -266,7 +270,7 @@
         font-size: 43px;
         font-family: myScoundFont;
         font-weight: normal;
-        color: black;
+        color: #e4122c;
         text-align: right;
         margin-bottom: 27px;
         margin-right: 50px;
@@ -420,7 +424,7 @@
     }
     
     .inputWithIcon input[type="text"]:focus+i {
-        color: dodgerBlue;
+        color: green;
     }
     
     .inputWithIcon.inputIconBg i {

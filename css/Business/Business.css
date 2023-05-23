@@ -81,7 +81,7 @@ body {
 }
 
 .section-one-description {
-    position: relative;
+    position: absolute;
     width: 603px;
     height: 308px;
     top: 25%;

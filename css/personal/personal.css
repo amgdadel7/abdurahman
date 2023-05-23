@@ -80,16 +80,17 @@ body {
 
 .section-one-description {
     position: absolute;
-    width: 530px;
+    width: 434px;
     height: 308px;
     top: 32%;
     right: 12%;
     direction: rtl;
+    text-align: justify;
 }
 
 .section-one-description h1 {
     color: white;
-    font-size: 80px;
+    font-size: 70px;
     text-align: right;
     font-family: myScoundFont;
     font-weight: normal;
@@ -98,8 +99,8 @@ body {
 
 .section-one-description p {
     color: white;
-    font-size: 40px;
-    text-align: right;
+    font-size: 32px;
+
     font-family: myFirstFont;
     font-weight: normal;
 }
@@ -107,12 +108,13 @@ body {
 .section-two-patern {
     background-color: #F2F2F7;
     background-image: url('../../images/personal/Group\ 6213.png');
-    background-size: contain;
+    background-size: 25vw 90vh;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
+    background-position: left;
 }
 
 .section-two {
@@ -289,7 +291,7 @@ body {
     background-color: #F2F2F7;
     background-image: url('../../images/personal/Group\ 6214.png');
     background-position: right;
-    background-size: contain;
+    background-size: 25vw 90vh;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -387,7 +389,7 @@ body {
 }
 
 .section-five-description {
-    width: 620px;
+    width: 615px;
     min-height: 316.91px;
     display: flex;
     flex-direction: column;
@@ -400,7 +402,7 @@ body {
 .section-five img {
     width: 418.44px;
     height: 574px;
-    margin-left: 205.6px;
+    margin-left: 213.6px;
 }
 
 .section-five h1 {
@@ -452,12 +454,13 @@ body {
 .section-six-patern {
     background-color: #F2F2F7;
     background-image: url('../../images/personal/Group\ 6213.png');
-    background-size: contain;
+    background-size: 25vw 90vh;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
+    background-position: left;
 }
 
 .section-six {
