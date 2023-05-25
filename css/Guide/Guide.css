@@ -460,6 +460,7 @@ div {
 .third-continer-describtion {
     max-width: 532.5px;
     max-height: 414.42px;
+    direction: rtl;
 }
 
 .third-continer-describtion-titel p {
