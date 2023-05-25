@@ -204,6 +204,10 @@
                                                             color: white;
                                                             background: #e4122c;
                                                         }
+                                                        nav ul ul li a:last-child:hover{
+                                                            border-radius: 0px 0px 15px 15px;
+                                                            background: #e4122c;
+                                                        }
                                                         
                                                         .show,
                                                         .icon,
@@ -1001,7 +1005,7 @@
                                                                 display: flex;
                                                                 padding-top: 0px;
                                                                 position: absolute;
-                                                                right: 10%;
+                                                                right: 8vw;
                                                                 top: 17px;
                                                                 WIDTH: auto;
                                                                 background: transparent;
@@ -1164,7 +1168,7 @@
                                                                 display: flex;
                                                                 padding-top: 0px;
                                                                 position: absolute;
-                                                                right: 16%;
+                                                                right: 11vw;
                                                                 top: 17px;
                                                                 WIDTH: auto;
                                                                 background: transparent;
@@ -1408,13 +1412,14 @@
                                                                 color: #1c1c1e;
                                                                 text-decoration: none;
                                                                 line-height: 70px;
-                                                                font-size: 24px;
-                                                                padding: 8px 25px;
+                                                                font-size: 21px;
+                                                                padding: 3px 14px;
                                                                 font-family: myFirstFont;
                                                                 font-weight: normal;
                                                             }
+                                                          
                                                             nav ul li a .fa-chevron-down {
-                                                                font-size: 19px;
+                                                                font-size: 14px;
                                                                 padding-right: 7.8px;
                                                             }
                                                             nav ul li a:hover {

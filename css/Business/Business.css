@@ -143,7 +143,7 @@ body {
     color: black;
     font-size: 32px;
     line-height: 1.4;
-    margin-top: 36.5px;
+    margin-top: 0px;
     text-align: justify;
     font-family: myFirstFont;
     font-weight: normal;
@@ -187,7 +187,7 @@ body {
     background-color: #F2F2F7;
     width: 100vw;
     /* height: 100vh; */
-    height: fit-content;
+    height: 100vh;
     /* max-height: fit-content; */
     background-image: url('../../images/Business/Mask\ Group\ 45.png');
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
     color: black;
     font-size: 32px;
     line-height: 1.4;
-    margin-top: 36.5px;
+    margin-top: 0px;
     text-align: justify;
     font-family: myFirstFont;
     font-weight: normal;

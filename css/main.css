@@ -29,6 +29,12 @@
     src: url(../font/Linaround-Thin.otf);
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -36,6 +42,11 @@
     padding: 0;
     margin: 0;
 }
+
+
+
+
+
 
 .title-tap {
     font-family: myFirstFont
@@ -665,7 +676,7 @@ p {
 .mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
 .mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     width: 14px;
-    margin: 0px -3px !important;
+    margin: -5px -2px !important;
 }
 
 .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
@@ -1089,13 +1100,15 @@ p {
         box-shadow: 0 0 0 15px rgb(217, 0, 32, 0.50), 0 0 0 18px rgb(217, 0, 32, 0.17);
         animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
     }
+   
+
     .btn-chatbot:hover {
         cursor: pointer;
     }
     .fa-comment {
-        font-size: 19.79px !important;
+        font-size: 24.79px !important;
         color: white;
-        padding: 20px 6.9px 1.5px 17.5px;
+        padding: 16px 6.9px 0.5px 14.5px;
     }
     .btn-chatbot .msg {
         position: absolute;
@@ -1109,7 +1122,7 @@ p {
         background-position: center;
         background-size: 11.51px;
         top: 27px;
-        right: 18px;
+        right: 17.5px;
     }
     @keyframes sunrise {
         0% {
@@ -1132,8 +1145,8 @@ p {
         font-weight: 900;
         color: #00bfb6;
         font-family: myFirstFont;
-        font-size: 17px;
-        padding-top: 6px;
+        font-size: 20px;
+        padding-top: 4px;
         color: black;
         position: fixed;
         z-index: 60;
@@ -1186,17 +1199,20 @@ p {
     }
     .btn-location>i {
         position: absolute;
-        /* background-repeat: no-repeat; */
-        /* background-position: right; */
+        /* background-repeat: no-repeat;
+        background-position: right; */
         object-position: right;
         object-fit: contain;
         width: 21px;
-        height: 25.53px;
+        height: 27.53px;
         background: url(../images/Subtraction\ 8.png) no-repeat content-box;
+          background-position-x: 0%;
+          background-position-y: 0%;
+          background-size: auto;
         background-position: center;
         background-size: 21px;
-        top: 14px;
-        right: 17px;
+        top: 15px;
+        right: 16px;
     }
 }
 
@@ -6928,13 +6944,13 @@ p {
     }
     .titel-part h1 {
         text-align: right;
-        font-size: 50px;
+        font-size: 45px;
         font-family: myfifthFont;
         font-weight: normal;
     }
     .titel-part h2 {
         text-align: right;
-        font-size: 30px !important;
+        font-size: 32px !important;
         font-family: myFirstFont;
         padding-bottom: 0px !important;
         font-weight: normal;
@@ -6967,13 +6983,13 @@ p {
     }
     .titel-part-tow h1 {
         text-align: right;
-        font-size: 37px;
+        font-size: 45px;
         font-family: myfifthFont;
         font-weight: normal;
     }
     .titel-part-tow h2 {
         text-align: right;
-        font-size: 29px !important;
+        font-size: 32px !important;
         font-family: myFirstFont;
         font-weight: normal;
         /* padding-bottom: 57.3px; */
@@ -7041,25 +7057,31 @@ p {
     }
     .ios {
         width: 252px;
-        height: 65px;
+        height: 60px;
         background: #E4122C;
         border: 0;
         border-radius: 30px;
         color: white;
-        font-size: 30px;
+        font-size: 26px;
         font-family: myfifthFont;
         cursor: pointer;
     }
+    .fa-app-store-ios{
+        margin-right: 10px;
+    }
     .andiroud {
         width: 252px;
-        height: 65px;
+        height: 60px;
         background: #E4122C;
         border: 0;
         border-radius: 30px;
         color: white;
-        font-size: 30px;
+        font-size: 26px;
         font-family: myfifthFont;
         cursor: pointer;
+    }
+    .fa-google-play {
+        margin-right: 10px;
     }
     .ios img {
         width: 23.18px;
@@ -7201,10 +7223,11 @@ p {
         float: right;
     }
     .advice {
-        font-size: 36px;
+        font-size: 45px;
         font-family: myScoundFont;
         top: 10vh;
         position: relative;
+        font-weight: normal;
     }
     .circulr {
         position: relative;
@@ -7644,6 +7667,7 @@ p {
     font-size: 40px;
     font-family: myFirstFont;
     direction: rtl;
+    font-weight: normal;
 }
 
 .details .button {
@@ -7836,9 +7860,17 @@ p {
         height: 370px !important;
         top: 5vh;
     }
+    .iframe {
+        width: 100%;
+        height: 100vh !important;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
+    .iframe {
+        width: 100%;
+        height: 400px !important;
+    }
     .sponsor {
         width: 100%;
         height: 62px !important;
@@ -7891,7 +7923,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 
@@ -7919,7 +7951,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -7985,7 +8017,7 @@ iframe {
     justify-content: flex-end;
     width: 356px;
     height: 356px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8117,7 +8149,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8137,7 +8169,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8157,7 +8189,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8177,7 +8209,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8250,7 +8282,7 @@ iframe {
     justify-content: flex-end;
     width: 356px;
     height: 356px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8375,7 +8407,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8395,7 +8427,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8415,7 +8447,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8435,7 +8467,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8460,7 +8492,7 @@ iframe {
     justify-content: flex-end;
     width: 356px;
     height: 356px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8602,7 +8634,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8622,7 +8654,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8642,7 +8674,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8662,7 +8694,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8686,7 +8718,7 @@ iframe {
     justify-content: flex-end;
     width: 356px;
     height: 356px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8828,7 +8860,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8848,7 +8880,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8868,7 +8900,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8888,7 +8920,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -8912,7 +8944,7 @@ iframe {
     justify-content: flex-end;
     width: 356px;
     height: 356px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -9055,7 +9087,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-repeat: repeat;
     background-size: auto;
     background-size: contain;
@@ -9077,7 +9109,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-repeat: repeat;
     background-size: auto;
     background-size: contain;
@@ -9099,7 +9131,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-repeat: repeat;
     background-size: auto;
     background-size: contain;
@@ -9121,7 +9153,7 @@ iframe {
     justify-content: flex-end;
     width: 269px;
     height: 270px;
-    background: url("../Mask\ Group\ 61.png");
+    background: url("../images/Mask\ Group\ 61.png");
     background-repeat: repeat;
     background-size: auto;
     background-size: contain;
@@ -9182,7 +9214,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9229,7 +9261,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9249,7 +9281,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9269,7 +9301,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9289,7 +9321,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9429,7 +9461,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9473,7 +9505,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9493,7 +9525,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9513,7 +9545,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9533,7 +9565,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9632,7 +9664,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9676,7 +9708,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9696,7 +9728,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9716,7 +9748,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9736,7 +9768,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9838,7 +9870,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9882,7 +9914,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9902,7 +9934,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9922,7 +9954,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -9942,7 +9974,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10044,7 +10076,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10088,7 +10120,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10108,7 +10140,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10128,7 +10160,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10148,7 +10180,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10278,7 +10310,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10325,7 +10357,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10345,7 +10377,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10365,7 +10397,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10385,7 +10417,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10525,7 +10557,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10569,7 +10601,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10589,7 +10621,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10609,7 +10641,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10629,7 +10661,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10728,7 +10760,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10772,7 +10804,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10792,7 +10824,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10812,7 +10844,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10832,7 +10864,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10934,7 +10966,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10978,7 +11010,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -10998,7 +11030,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11018,7 +11050,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11038,7 +11070,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11140,7 +11172,7 @@ iframe {
         justify-content: flex-end;
         width: 182px;
         height: 182px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11184,7 +11216,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11204,7 +11236,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11224,7 +11256,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11244,7 +11276,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11374,7 +11406,7 @@ iframe {
         justify-content: flex-end;
         width: 150px;
         height: 150px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11421,7 +11453,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11441,7 +11473,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11461,7 +11493,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11481,7 +11513,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11515,7 +11547,7 @@ iframe {
         justify-content: flex-end;
         width: 150px;
         height: 150px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11559,7 +11591,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11579,7 +11611,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11599,7 +11631,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11619,7 +11651,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11718,7 +11750,7 @@ iframe {
         justify-content: flex-end;
         width: 150px;
         height: 150px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11762,7 +11794,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11782,7 +11814,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11802,7 +11834,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11822,7 +11854,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11924,7 +11956,7 @@ iframe {
         justify-content: flex-end;
         width: 150px;
         height: 150px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11968,7 +12000,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -11988,7 +12020,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12008,7 +12040,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12028,7 +12060,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12130,7 +12162,7 @@ iframe {
         justify-content: flex-end;
         width: 150px;
         height: 150px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12174,7 +12206,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12194,7 +12226,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12214,7 +12246,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
@@ -12234,7 +12266,7 @@ iframe {
         justify-content: flex-end;
         width: 126px;
         height: 126px;
-        background: url("../Mask\ Group\ 61.png");
+        background: url("../images/Mask\ Group\ 61.png");
         background-repeat: repeat;
         background-size: auto;
         background-size: contain;
