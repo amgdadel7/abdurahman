@@ -60,12 +60,12 @@ $(function() {
         axis: "y",
         snap: '.custom-scrollbar-js',
         snapAmount: '.custom-scrollbar-js',
-        mouseWheel:true,
-        scrollType:"continuous",
+    
+      
         
         snapAmount: slideAmount,
     
-        // contentTouchScroll: 25,
+        contentTouchScroll: 25,
         theme: "rounded-dark"
     });
 });

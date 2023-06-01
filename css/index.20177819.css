@@ -381,17 +381,18 @@ body {
 
 .triple-slider .text h1 {
     width: max-content;
-    font-size: 17px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px !important;
     font-family: myFirstFont;
     direction: rtl;
-}
+    font-weight: normal;
+    line-height: 1.2;
+  }
 
 .triple-slider .text {
     position: absolute;
     display: block;
-    left: 2%;
+    left: 10%;
     bottom: -2%;
     /* width: fit-content; */
     width: 500px;

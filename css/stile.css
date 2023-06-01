@@ -474,7 +474,7 @@ header p {
         padding: 50px;
         color: #fff;
         background-color: #FFFFFF;
-        height: 180px;
+        height: fit-content;
     }
     .l-footer {
         text-align: center;
@@ -640,13 +640,22 @@ header p {
     .footer>* {
         flex: 1 100%;
     }
+    .F-footer {
+        font-family: poppins;
+        margin: 0;
+        display: grid;
+        font-size: 14px;
+        width: 100vw ;
+      }
     .footer {
         display: flex;
         flex-flow: row wrap;
         padding: 50px;
         color: #fff;
         background-color: #FFFFFF;
-        height: 180px;
+        height: 100%;
+width: 100vw;
+ 
     }
     .l-footer {
         text-align: center;
@@ -713,10 +722,11 @@ header p {
     }
     .b-footer {
         text-align: center;
+        width: 100vw;    
     }
     .b-footer p {
         font-size: 12px;
-        margin-left: 12vw;
+        margin-left: 4vw;
     }
     .l-footer p {
         padding-right: 20%;
@@ -803,7 +813,7 @@ header p {
         background-size: auto;
         background-repeat: no-repeat;
         background-size: contain;
-        margin-left: 41.5vw;
+        margin-left: 33vw;
     }
 }
 
