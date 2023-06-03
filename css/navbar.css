@@ -506,8 +506,9 @@
                                                                 border-radius: 20px;
                                                                 font-size: 16px;
                                                                 cursor: pointer;
-                                                                height: 28px;
+                                                                height: 25px !important;
                                                                 transition: background-color 0.3s, color 0.3s;
+                                                                width: 57.04px !important;
                                                             }
                                                             .download-btn span {
                                                                 display: none;
@@ -516,8 +517,8 @@
                                                                 color: #1c1c1e;
                                                                 padding-left: 20px;
                                                                 /* margin-right: 12px; */
-                                                                width: 14px;
-                                                                height: 15px;
+                                                                width: 16.29px !important;
+                                                                height: 13.81 !important;
                                                                 transition: color 0.3s;
                                                                 background: url(../images/Group\ 5734.png) no-repeat;
                                                             }
