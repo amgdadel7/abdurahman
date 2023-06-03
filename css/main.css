@@ -2694,7 +2694,7 @@ p {
     .blog-slider__pagination {
         transform: translateX(-50%);
         left: 54% !important;
-        top: 47vh;
+        top: 28vh;
         width: 100% !important;
         display: flex;
         justify-content: center;
