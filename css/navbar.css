@@ -523,6 +523,262 @@
                                                                 background: url(../images/Group\ 5734.png) no-repeat;
                                                             }
                                                         }
+                                                        @media (min-width: 321px) and (max-width: 375px) {
+                                                            .llla {
+                                                                position: absolute;
+                                                                float: left;
+                                                            }
+                                                            nav {
+                                                                background: white;
+                                                                display: flex;
+                                                                position: fixed;
+                                                                top: 0;
+                                                                right: 0;
+                                                                left: 0;
+                                                                height: 50px;
+                                                                z-index: 50;
+                                                                transition: all 80ms ease-out;
+                                                                flex-direction: row;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                              }
+                                                            nav ul {
+                                                                position: absolute;
+                                                                top: 50px !important;
+                                                                margin-right: 0px;
+                                                                width: 100%;
+                                                            }
+                                                            nav .logo {
+                                                                padding-left: 28px;
+                                                                width: 100%;
+                                                                padding-top: 4px;
+                                                            }
+                                                            .llla {
+                                                                display: flex;
+                                                                padding-top: 0px;
+                                                                position: absolute;
+                                                                right: 64px;
+                                                                top:13px !important;
+                                                                background: transparent;
+                                                                flex-direction: row;
+                                                                flex-wrap: nowrap;
+                                                                align-content: flex-end;
+                                                                justify-content: flex-end;
+                                                            }
+                                                            .logo a img {
+                                                                height:21.86px  ;
+                                                                width: auto;
+                                                                border-radius: 0px;
+                                                                box-shadow: 0px 0px 0px transparent;
+                                                              }
+                                                            nav ul .drop-one {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-tow {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-three {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-fore {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul .drop-five {
+                                                                margin-left: -15px;
+                                                            }
+                                                            nav ul li,
+                                                            nav ul ul li {
+                                                                display: block;
+                                                                width: 100%;
+                                                                height: fit-content;
+                                                                left: 7px;
+                                                                float: right;
+                                                                text-align: center;
+                                                                background: #8E8E93;
+                                                            }
+                                                            nav ul ul li {
+                                                                padding-top: 2px;
+                                                                padding-bottom: 2px;
+                                                            }
+                                                            nav ul ul li:hover {
+                                                                background: #8e8e93;
+                                                            }
+                                                            nav ul ul {
+                                                                top: 70px;
+                                                                position: static;
+                                                                border-top: none;
+                                                                float: none;
+                                                                display: none;
+                                                                width: 100%;
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                                background: #8e8e93
+                                                            }
+                                                            nav ul ul a {
+                                                                padding-left: 60px;
+                                                            }
+                                                            nav ul ul li a {
+                                                                line-height: 40px;
+                                                                text-align: center;
+                                                                font-size: 20px;
+                                                                padding-left: 10px;
+                                                                height: auto;
+                                                                width: 100%;
+                                                                color: white;
+                                                                font-family: Light1;
+                                                                background: #8e8e93 !important;
+                                                            }
+                                                            nav ul ul li a:hover {
+                                                                background: #8e8e93;
+                                                            }
+                                                            .show {
+                                                                display: block;
+                                                                color: white;
+                                                                background: #e4122c;
+                                                                font-size: 18px;
+                                                                padding: 0 20px;
+                                                                line-height: 50px;
+                                                                cursor: pointer;
+                                                                font-family: myFirstFont;
+                                                                font-weight: normal;
+                                                            }
+                                                            .btn-1:checked+.drop-one {
+                                                                display: block;
+                                                            }
+                                                            .btn-1 .drop-one {
+                                                                display: none;
+                                                            }
+                                                            input[type="checkbox"]:checked+ul {
+                                                                display: block;
+                                                            }
+                                                            .icon {
+                                                                display: block;
+                                                                color: #1c1c1e;
+                                                                position: absolute;
+                                                                right: 44px;
+                                                                top: 17px !important;
+                                                                height: 10px;
+                                                                width: 8px;
+                                                                line-height: 50px;
+                                                                font-size: 20px;
+                                                                cursor: pointer;
+                                                                animation-name: identifierback;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            label div {
+                                                                width: 8px;
+                                                                height: 4px;
+                                                                background-color: #333945;
+                                                                margin-bottom: 4px;
+                                                                margin-left: 0;
+                                                                border-radius: 6px;
+                                                                transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+                                                            }
+                                                            label div:first-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            label div:nth-child(2) {
+                                                                width: 15px;
+                                                                margin-left: 4.5px;
+                                                                background-color: #e4122c;
+                                                                transition: all .7s;
+                                                            }
+                                                            @keyframes identifier {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                            }
+                                                            @keyframes identifierback {
+                                                                0% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(-90deg);
+                                                                }
+                                                                100% {
+                                                                    transform: translateY(215%) translateX(40%) rotateZ(0deg);
+                                                                }
+                                                            }
+                                                            label div:last-child {
+                                                                width: 25px;
+                                                                transition: all .7s;
+                                                            }
+                                                            #btn:checked+label {
+                                                                transform: translateY(167%) translateX(40%) rotateZ(-90deg) !important;
+                                                                top: 17px;
+                                                                animation-name: identifier;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            #btn:checked+label div {
+                                                                width: 6px;
+                                                                margin-left: 12px;
+                                                                margin-bottom: 3px;
+                                                                display: block;
+                                                            }
+                                                            #btn:checked+label div:first-child {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            #btn:checked+label div:nth-child(2) {
+                                                                background-color: #e4122c;
+                                                            }
+                                                            #btn:checked+label div:nth-child(3) {
+                                                                background-color: #1c1c1e;
+                                                            }
+                                                            nav ul a:hover {
+                                                                box-shadow: none;
+                                                                color: white !important;
+                                                            }
+                                                            .show+a,
+                                                            ul {
+                                                                display: none;
+                                                            }
+                                                            [id^='btn']:checked~ul {
+                                                                display: block;
+                                                            }
+                                                            .fa-chevron-down {
+                                                                font-size: 10px;
+                                                                float: left;
+                                                                padding-top: 19px;
+                                                                margin-right: -8px;
+                                                                transform: translateX(107px);
+                                                            }
+                                                            @keyframes arrowdown {
+                                                                0% {
+                                                                    transform: rotateX(150deg)
+                                                                }
+                                                                100% {
+                                                                    transform: rotateX(150deg)
+                                                                }
+                                                            }
+                                                            .download-btn {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                padding: 10px 20px;
+                                                                background-color: #1c1c1e;
+                                                                color: #1c1c1e;
+                                                                border: 1px solid #1c1c1e;
+                                                                border-radius: 20px;
+                                                                font-size: 16px;
+                                                                cursor: pointer;
+                                                                height: 25px !important;
+                                                                transition: background-color 0.3s, color 0.3s;
+                                                                width: 57.04px !important;
+                                                            }
+                                                            .download-btn span {
+                                                                display: none;
+                                                            }
+                                                            .download-btn i {
+                                                                color: #1c1c1e;
+                                                                padding-left: 20px;
+                                                                /* margin-right: 12px; */
+                                                                width: 16.29px !important;
+                                                                height: 13.81 !important;
+                                                                transition: color 0.3s;
+                                                                background: url(../images/Group\ 5734.png) no-repeat;
+                                                            }
+                                                        }
                                                         @media all and (max-width: 575.98px) {
                                                             .llla {
                                                                 position: absolute;
