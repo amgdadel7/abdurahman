@@ -28,7 +28,13 @@
     font-family: mysixthFont;
     src: url(../../font/Linaround-Thin.otf);
 }
-
+.card__read-more span{
+    font-family: myfifthFont;
+    font-weight: normal;
+}
+.space{
+ margin-bottom: 15px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -564,7 +570,7 @@ body {
         object-fit: cover;
         width: 300px;
         height: 606px;
-        border-radius: 40px;
+        border-radius: 30px;
     }
     .section-one-description {
         position: absolute;
