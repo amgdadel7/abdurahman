@@ -10,7 +10,48 @@
     position: relative;
     height: auto;
 }
-
+@media (max-width: 320px){
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5rem !important;
+      }
+      .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6.8rem !important;
+      }
+}
+@media (min-width: 321px) and (max-width: 375px){
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6rem !important;
+      }
+      .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.8rem !important;
+      }
+}
+@media (min-width: 376px) and (max-width: 428px){
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6rem !important;
+      }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.5rem !important;
+      }
+}
 @media screen and (max-width: 700px) {
     .read{
         overflow-y: auto hidden;
