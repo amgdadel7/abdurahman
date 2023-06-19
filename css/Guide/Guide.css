@@ -303,7 +303,126 @@ div {
     top: 40% !important;
     background: transparent !important;
 }
+@media all and (max-width: 320px) {
+  .frist-continer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 753px;
+    background: white;
+  }
+  .frist-continer-image {
+    width: 280px !important;
+    height: 545px !important;
+    margin-top: -147px !important;
+    position: relative;
+  }
+  .frist-continer-image img {
+    width: 280px !important;
+    height: 545px !important;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .frist-continer-describtion {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 197px;
+    height: 155px;
+    right: 62px;
+    top: 395px !important;
+    left: 28px !important;
+    bottom: 39px;
+  }
+  .frist-continer-describtion-titel p {
+    font-size: 30px;
+    color: white;
+    font-family: myScoundFont;
+    font-weight: normal;
+    line-height: 1.1;
+    direction: rtl;
+  }
+  .frist-continer-describtion-subtitel p {
+    font-size: 16px !important;
+    color: white;
+    text-align: right;
+    font-family: myThirdFont;
+    direction: rtl;
+  }
+  .main-container .titel {
+    top: -1% !important ;
+  }
+  .scound-continer {
+    position: relative;
+    height: 968px;
+    background: white;
+    border-radius: 0px 0px 0px 157px !important;
+  }
+  .tab-nav-bar {
+    top: 7% !important;
+  }
+  .main-container .titel h1 {
+    font-size: 25px !important;
+    color: var(--second-color);
+    font-family: myScoundFont;
+    font-weight: normal;
+  }
+  .third-continer-describtion-titel p {
+    font-size: 25px !important;
+    color: #E4122C;
+    text-align: right;
+    margin-bottom: 7.1px;
+    font-family: myScoundFont;
+    margin-top: 42px !important;
+  }
+  .third-continer {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 115vh !important;
+    background: url("../../images/Guide/Path\ 9964.webp");
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+      background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 375px 311.69px;
+    background-position: bottom;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end !important;
+    padding-top: 0px;
+  }
+  .third-continer-image {
+    width: 256px;
+    height: 258.56px;
+    margin-right: 0px;
+    margin-bottom: 56px !important;
+    padding-top: 103px !important;
+    margin-top: 57px !important;
+  }
+  .slider {
+    margin: 0 35px !important;
+    height: 425px !important;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px){
 
+}
+
+@media (min-width: 376px) and (max-width: 428px){
+
+}
+
+@media (min-width: 429px) and (max-width: 600px){
+
+}
 @media screen and (max-width:500px) {
     .scound-continer {
         height: 100vh !important;
@@ -312,7 +431,7 @@ div {
         max-width: 290px !important;
     }
     .tab-content {
-        max-width: 290px !important;
+        max-width: 290px ;
     }
     .tab {
         position: absolute;
@@ -323,10 +442,10 @@ div {
         content-visibility: hidden;
     }
     .tab-nav-bar {
-        top: 30% !important;
+        top: 30%  ;
     }
     .main-container .titel {
-      top: 22% !important;
+      top: 22% ;
     }
     .tab-content .arrowButton.left {
         right: -29px !important;
@@ -433,7 +552,7 @@ div {
     display: flex;
     flex-direction: row;
     max-height: 1029px;
-    background: url("../../images/Guide/Path\ 9964.png");
+    background: url("../../images/Guide/Path\ 9964.webp");
       background-repeat: repeat;
       background-size: auto;
     background-repeat: no-repeat;
@@ -539,7 +658,7 @@ div {
         display: flex;
         flex-direction: column-reverse;
         height: 606px;
-        background: url("../../images/Guide/Path\ 9964.png");
+        background: url("../../images/Guide/Path\ 9964.webp");
           background-repeat: no-repeat;
           background-size: 375px 311.69px;
           background-position: bottom;
@@ -760,7 +879,7 @@ div {
       display: flex;
       flex-direction: column-reverse;
       height: 746px;
-      background: url("../../images/Guide/Path\ 9964.png");
+      background: url("../../images/Guide/Path\ 9964.webp");
         background-repeat: repeat;
         background-size: 807.94px 481.39px;
         background-position-y: bottom;
@@ -982,7 +1101,7 @@ div {
       display: flex;
       flex-direction: column-reverse;
       height: 746px;
-      background: url("../../images/Guide/Path\ 9964.png");
+      background: url("../../images/Guide/Path\ 9964.webp");
         background-repeat: repeat;
         background-size: 807.94px 481.39px;
         background-position-y: bottom;
@@ -1204,7 +1323,7 @@ div {
         display: flex;
         flex-direction: column-reverse;
         height: 746px;
-        background: url("../../images/Guide/Path\ 9964.png");
+        background: url("../../images/Guide/Path\ 9964.webp");
           background-repeat: repeat;
           background-size: 807.94px 481.39px;
           background-position-y: bottom;
@@ -1413,7 +1532,7 @@ div {
     display: flex;
     flex-direction: row;
     height: 746px;
-    background: url("../../images/Guide/Path\ 9964.png");
+    background: url("../../images/Guide/Path\ 9964.webp");
       background-repeat: repeat;
       background-size: 807.94px 481.39px;
       background-position-y: bottom;

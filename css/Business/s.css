@@ -1,0 +1,276 @@
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.section-four h1 {
+    position: relative;
+    height: auto;
+}
+.section-two .l{
+    display: flex;
+    flex-direction: row;
+
+}
+@media (max-width: 320px){
+    /* .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5rem !important;
+      }
+      .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6.8rem !important;
+      } */
+}
+@media (min-width: 321px) and (max-width: 375px){
+    /* .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6rem !important;
+      }
+      .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.8rem !important;
+      } */
+}
+@media (min-width: 376px) and (max-width: 428px){
+    /* .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 6rem !important;
+      }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.5rem !important;
+      } */
+}
+@media screen and (max-width: 700px) {
+    .read{
+        overflow-y: auto hidden;
+        height: auto;
+        cursor: pointer;
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+    .card__read-more--open .read-more-btn {
+        top: 30px !important;
+    }
+    /* .section-four-image {
+        display: contents;
+    } */
+}
+.section-two     .card__read-more--open {
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+    padding-bottom: 20rem;   
+}
+.section-three .card__read-more--open {
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+    padding-bottom: 14rem;   
+}
+.section-four .card__read-more--open {
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+    padding-bottom: 8.5rem;   
+}
+.section-five .card__read-more--open {
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+    padding-bottom: 14rem;   
+}
+.section-six .card__read-more--open {
+    opacity: 1;
+    height: 5rem;
+    position: relative;
+    padding-bottom: 9rem;   
+}
+.read-more-btn {
+    display: block !important;
+    display: contents;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+@media (min-width: 1201px) and (max-width: 1440px){
+    .section-two .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 16rem;   
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 12rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 13rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8rem;   
+    }
+    .read{
+        overflow-y: auto hidden;
+        height: auto;
+        cursor: pointer;
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+}
+@media (min-width: 601px) and (max-width: 1200px){
+    .read{
+        overflow-y: auto hidden;
+        height: auto;
+        cursor: pointer;
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }    
+    .section-two p:has(.card__read-more--open){
+        text-overflow: ellipsis;
+        overflow-y: auto;
+        min-height: 40px;
+        max-height: 200px;
+        height: auto;
+        cursor: pointer;
+        scroll-behavior: auto;
+    }
+    p:has(~.card__read-more.card__read-more--open) {
+        text-overflow: ellipsis;
+        overflow-y: auto;
+        min-height: 40px;
+        max-height: 200px;
+        height: auto;
+        cursor: pointer;
+        scroll-behavior: auto;
+    }
+      .card__read-more--open > .section-two p {
+        text-overflow: ellipsis;
+
+    }
+    .section-two .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 10rem;   
+        
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.7rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5.5rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 8.5rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5.5rem;   
+    }
+}
+@media screen and (max-width: 600px){
+    .read{
+        overflow-y: auto hidden;
+        height: auto;
+        cursor: pointer;
+    }
+    .read.active{
+        overflow-y: auto;
+            min-height: 40px;
+            max-height: 200px;
+            height: auto;
+            cursor: pointer;
+            scroll-behavior: auto;
+    }   
+    .section-two     .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 9rem;   
+    }
+    .section-three .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 7.5rem;   
+    }
+    .section-four .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 4rem;   
+    }
+    .section-five .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 7rem;   
+    }
+    .section-six .card__read-more--open {
+        opacity: 1;
+        height: 5rem;
+        position: relative;
+        padding-bottom: 5.5rem;   
+    }
+}
