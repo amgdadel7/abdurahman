@@ -351,11 +351,11 @@ body {
     }
     .section-two p {
         color: black;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.4;
         margin-top: 8px;
         text-align: justify;
-        font-family: myFirstFont;
+    
         font-weight: normal;
     }
     .section-two button {
@@ -414,13 +414,18 @@ margin-top: 34.6px;
         font-family: myScoundFont;
         font-weight: normal;
     }
+       .span{
+        color: #E4122C;
+    }
+
+    
     .section-three p {
         color: black;
         font-size: 16px;
         line-height: 1.4;
         margin-top: 8px;
         text-align: justify;
-        font-family: myFirstFont;
+
         font-weight: normal;
     }
     .section-three button {

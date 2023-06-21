@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myThirdFont;
+    src: url(../../font/Linaround-Light.otf);
+}
+
 .card__read-more {
     display: block;
     opacity: 0;
@@ -5,16 +10,29 @@
     transition: all 0.5s;
     position: relative;
 }
-
-.section-four h1 {
+.card__read-more-one {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
     position: relative;
-    height: auto;
 }
+
 .section-two .l{
     display: flex;
     flex-direction: row;
 
 }
+.section-three .l{
+    display: flex;
+    flex-direction: row;
+
+}
+.signin {
+    margin-right: 10px;
+    background-color: #1C1C1E !important;
+    color: white !important;
+  }
 @media (max-width: 320px){
     /* .section-four .card__read-more--open {
         opacity: 1;
@@ -74,41 +92,38 @@
     .card__read-more--open .read-more-btn {
         top: 30px !important;
     }
+    .card__read-more-one--open .read-more-btn-one    {
+        top: 30px !important;
+    }
     /* .section-four-image {
         display: contents;
     } */
 }
+
 .section-two     .card__read-more--open {
     opacity: 1;
     height: 5rem;
     position: relative;
     padding-bottom: 20rem;   
 }
-.section-three .card__read-more--open {
+.section-three    .card__read-more-one--open {
     opacity: 1;
     height: 5rem;
     position: relative;
-    padding-bottom: 14rem;   
+    padding-bottom: 20rem;   
 }
-.section-four .card__read-more--open {
-    opacity: 1;
-    height: 5rem;
-    position: relative;
-    padding-bottom: 8.5rem;   
-}
-.section-five .card__read-more--open {
-    opacity: 1;
-    height: 5rem;
-    position: relative;
-    padding-bottom: 14rem;   
-}
-.section-six .card__read-more--open {
-    opacity: 1;
-    height: 5rem;
-    position: relative;
-    padding-bottom: 9rem;   
-}
+
+
 .read-more-btn {
+    display: block !important;
+    display: contents;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.read-more-btn-one {
     display: block !important;
     display: contents;
     position: relative;
@@ -245,9 +260,19 @@
     }   
     .section-two     .card__read-more--open {
         opacity: 1;
-        height: 5rem;
+        height: 13rem;
+        position: relative;
+        padding-bottom: 9rem; 
+        font-family: myThirdFont;
+font-weight: normal;  
+    }
+    .section-three    .card__read-more-one--open {
+        opacity: 1;
+        height: 14rem;
         position: relative;
         padding-bottom: 9rem;   
+        font-family: myThirdFont;
+        font-weight: normal;
     }
     .section-three .card__read-more--open {
         opacity: 1;
